@@ -1,2 +1,0 @@
-# TreningsApp
-TreningsApp - Prototype
