@@ -2,116 +2,184 @@
 
 h2 {
     margin: 0px;
+    padding-top: 10px;
 }
 
+#menu {
+  background: rgba(0,0,0,.5);
+  display: block;
+  font-size: 9px; /* change this */
+  margin: 4em auto;
+  padding: 2.5em 2em;
+  width: 2em;
+  height: auto;
+  text-align: left;
+    position: absolute;
+  top: -30px;
+  left: 961px;
+}
+
+#menu span {
+  background: #fff;
+  display: block;
+  position: relative;
+  -webkit-transform: translate3d(0,0,0);
+}
+
+#menu span,
+#menu span:before,
+#menu span:after {
+  width: 100%;
+  height: .2em;
+  -moz-transition:       all 0.4s;
+  -o-transition:         all 0.4s;
+  -webkit-transition:    all 0.4s;
+  transition:            all 0.4s;
+  -webkit-transform: translate3d(0,0,0);
+}
+
+#menu span:before,
+#menu span:after {
+  background: #fff;
+  content: " ";
+  margin-top: -.6em;
+  position: absolute;
+}
+
+#menu span:after {
+  margin-top: .6em;
+}
+
+#menu.on span {
+  background: transparent;
+}
+
+#menu.on span:before {
+  -moz-transform: rotate(45deg) translate(.5em, .4em);
+  -ms-transform: rotate(45deg) translate(.5em, .4em);
+  -o-transform: rotate(45deg) translate(.5em, .4em);
+  -webkit-transform: rotate(45deg) translate(.5em, .4em);
+  transform: rotate(45deg) translate(.5em, .4em);
+}
+
+#menu.on span:after {
+  -moz-transform: rotate(-45deg) translate(.45em, -.35em);
+  -ms-transform: rotate(-45deg) translate(.45em, -.35em);
+  -o-transform: rotate(-45deg) translate(.45em, -.35em);
+  -webkit-transform: rotate(-45deg) translate(.45em, -.35em);
+  transform: rotate(-45deg) translate(.45em, -.35em);
+}
+
+
 .top-bar {
-    color:white;
+    color: white;
     text-align: center;
-    background-color:#e65d3c;
-    width:100%;
-    height:60px;
+    background-color: #e65d3c;
+    width: 100%;
+    height: 60px;
 }
 
 .social-nav {
     background-color: #b04930;
     height: 68px;
     text-align: center;
-
-
 }
 
 .social-nav ul {
     margin: 0px;
     padding: 0px;
     height: 68px;
-
 }
 
 .social-nav ul li {
-
-     height: 28px;
-     list-style: none;
+    height: 28px;
+    list-style: none;
     display: inline-block;
-    padding: 20px 70px;
-
-
-
-
+    padding: 20px 73px;
 }
 
-.social-nav ul li:nth-child(1),.social-nav ul li:nth-child(2) {
+.social-nav ul li:nth-child(1),
+.social-nav ul li:nth-child(2) {
     border-right: 1px #963e29 solid;
 }
 
-.social-nav ul li a{
+.social-nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 10pt;
 }
 
-.app-container{
-    height:1000px;
-    margin:auto;
-    position:relative;
-    width:641px;
+.app-container {
+    height: 1000px;
+    margin: auto;
+    position: relative;
+    width: 641px;
     background-image: url("../bilder/bg-log-inn.jpg");
     background-repeat: no-repeat;
 }
 
 .loggedin {
     background-image: none;
-    width:641px;
-    margin:auto;
+    width: 641px;
+    margin: auto;
 }
 
-.top-nav{
-    color:white;
-    text-align:center;
-    position:absolute;
-    background-color:#e65d3c;
-    width:100%;
-    height:60px;
+.top-nav {
+    color: white;
+    text-align: center;
+    position: absolute;
+    background-color: #e65d3c;
+    width: 100%;
+    height: 60px;
 }
 
-.login-field{
-    top:450px;
-    position:absolute;
-    width:100%;
-}
-.username input, .password input{
-    margin-left:70px;
-    padding:2%;
-    width:75%;
-    margin-bottom:5%;
+.login-field {
+    top: 450px;
+    position: absolute;
+    width: 100%;
 }
 
-.login-btn, .facebook-login-btn{
-    color:white;
-    text-align:center;
-    width:79%;
-    margin-bottom:5%;
-    margin-left:70px;
-    padding:1px;
+.username input,
+.password input {
+    margin-left: 70px;
+    padding: 2%;
+    width: 75%;
+    margin-bottom: 5%;
 }
-.login-btn{
-    background-color:#e65d3c;
+
+.login-btn,
+.facebook-login-btn {
+    color: white;
+    text-align: center;
+    width: 79%;
+    margin-bottom: 5%;
+    margin-left: 70px;
+    padding: 1px;
 }
-.facebook-login-btn{
-    background-color:#2d4486;
+
+.login-btn {
+    background-color: #e65d3c;
 }
-.forgot-password{
-    margin-left:470px;
+
+.facebook-login-btn {
+    background-color: #2d4486;
+}
+
+.forgot-password {
+    margin-left: 470px;
 }
 
 .fancy {
     line-height: 0.5;
     text-align: center;
-    color:white;
+    color: white;
 }
+
 .fancy span {
     display: inline-block;
     position: relative;
 }
+
 .fancy span:before,
 .fancy span:after {
     content: "";
@@ -121,17 +189,19 @@ h2 {
     top: 0px;
     width: 190px;
 }
+
 .fancy span:before {
     right: 100%;
     margin-right: 15px;
 }
+
 .fancy span:after {
     left: 100%;
     margin-left: 15px;
 }
 
-.register{
-    color:white;
-    margin-top:100px;
-    margin-left:260px;
+.register {
+    color: white;
+    margin-top: 100px;
+    margin-left: 260px;
 }
