@@ -12,10 +12,8 @@
     <div class="loggedin">
         <div id="ham-menu-open">
             <header>
-
             </header>
-
-            <nav>
+            <nav class="ham-nav">
                 <ul>
                     <li>Kosthold</li>
                     <li>Trening</li>
@@ -26,10 +24,13 @@
             </nav>
         </div>
         <nav class="top-bar">
-            <h2>Social</h2>
 
+            <button class="cmn-toggle-switch cmn-toggle-switch__htx">
+                <span>toggle menu</span>
+            </button>
+            <h2>Sosial</h2>
         </nav>
-        <a href="#" class="menu-icon border-icon"></a>
+
         <nav class="social-nav">
             <ul>
                 <li><a href="">Inbox</a></li>
@@ -80,14 +81,17 @@
     $(function() {
 
         function settEvent() {
-            $(".menu-icon").click(function() {
+            $(".cmn-toggle-switch").click(function() {
                 $("#ham-menu-open").toggle();
+                $(this).toggleClass('active');
             });
         }
 
         var init = function() {
             settEvent();
         }();
+
+
     });
     </script>
 </body>
