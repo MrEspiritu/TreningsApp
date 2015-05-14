@@ -1,5 +1,54 @@
 @import url("main.css");
 
+h2 {
+    margin: 0px;
+}
+
+.top-bar {
+    color:white;
+    text-align: center;
+    background-color:#e65d3c;
+    width:100%;
+    height:60px;
+}
+
+.social-nav {
+    background-color: #b04930;
+    height: 68px;
+    text-align: center;
+
+
+}
+
+.social-nav ul {
+    margin: 0px;
+    padding: 0px;
+    height: 68px;
+
+}
+
+.social-nav ul li {
+
+     height: 28px;
+     list-style: none;
+    display: inline-block;
+    padding: 20px 70px;
+
+
+
+
+}
+
+.social-nav ul li:nth-child(1),.social-nav ul li:nth-child(2) {
+    border-right: 1px #963e29 solid;
+}
+
+.social-nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 10pt;
+}
+
 .app-container{
     height:1000px;
     margin:auto;
@@ -7,6 +56,12 @@
     width:641px;
     background-image: url("../bilder/bg-log-inn.jpg");
     background-repeat: no-repeat;
+}
+
+.loggedin {
+    background-image: none;
+    width:641px;
+    margin:auto;
 }
 
 .top-nav{
