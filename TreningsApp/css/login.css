@@ -39,31 +39,44 @@ h2 {
     position: relative;
 }
 
+#social-nav-bot {
+    background-color: #e65d3c;
+    text-align: center;
+}
+
 .social-nav {
     background-color: #b04930;
     height: 68px;
     text-align: center;
 }
 
-.social-nav ul {
+.social-nav ul, #social-nav-bot ul {
     margin: 0px;
     padding: 0px;
     height: 68px;
 }
 
-.social-nav ul li {
+.social-nav ul li, #social-nav-bot ul li {
     height: 28px;
     list-style: none;
     display: inline-block;
     padding: 20px 73px;
 }
 
+#social-nav-bot ul li {
+    padding: 20px 85px;
+}
+
+
+
 .social-nav ul li:nth-child(1),
-.social-nav ul li:nth-child(2) {
+.social-nav ul li:nth-child(2),
+#social-nav-bot ul li:nth-child(1),
+#social-nav-bot ul li:nth-child(2){
     border-right: 1px #963e29 solid;
 }
 
-.social-nav ul li a {
+.social-nav ul li a, #social-nav-bot ul li a {
     color: white;
     text-decoration: none;
     font-size: 10pt;
@@ -78,6 +91,11 @@ h2 {
 #social_header {
     background-color: #382420;
     height: 60px;
+}
+
+#social-container {
+    height: 877px;
+    overflow-y: scroll;
 }
 
 #social_post #social_header h3 {
@@ -98,8 +116,10 @@ h2 {
 }
 
 .loggedin {
+    position: relative;
     background-image: none;
     width: 641px;
+    height: 1165px;
     margin: auto;
 }
 
