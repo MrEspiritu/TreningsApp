@@ -3,17 +3,23 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Logg inn</title>
+    <title>Sosiale nyheter</title>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600,400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/login.css">
 </head>
 
 <body>
     <div class="loggedin">
+        <div id="ham-menu-open">
+            <header>
+
+            </header>
+        </div>
         <nav class="top-bar">
             <h2>Social</h2>
-            <a href="#" class="menu-icon border-icon"></a>
+
         </nav>
+        <a href="#" class="menu-icon border-icon"></a>
         <nav class="social-nav">
             <ul>
                 <li><a href="">Inbox</a></li>
@@ -21,7 +27,6 @@
                 <li><a href="">Notifications</a></li>
             </ul>
         </nav>
-
         <div id="social-container">
             <div id="social_post">
                 <div id="social_header">
@@ -37,7 +42,6 @@
                     </div>
                 </div>
             </div>
-
             <div id="social_post">
                 <div id="social_header">
                     <img src="assets/niykee_icon.png">
@@ -52,9 +56,7 @@
                     </div>
                 </div>
             </div>
-
         </div>
-
         <nav id="social-nav-bot">
             <ul>
                 <li><a href="">Sosial</a></li>
@@ -63,6 +65,21 @@
             </ul>
         </nav>
     </div>
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script>
+    $(function() {
+
+        function settEvent() {
+            $(".menu-icon").click(function() {
+                $("#ham-menu-open").toggle();
+            });
+        }
+
+        var init = function() {
+            settEvent();
+        }();
+    });
+    </script>
 </body>
 
 </html>
