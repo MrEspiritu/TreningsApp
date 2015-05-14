@@ -5,6 +5,7 @@ h2 {
     padding-top: 10px;
 }
 
+/*HAMBURGER MENU*/
 .menu-icon {
     position:absolute;
     display:inline-block;
@@ -27,7 +28,7 @@ h2 {
     width:100%;
     border-top:5px solid #fff;
 }
-
+/*Hamburger menu END*/
 
 .top-bar {
     color: white;
@@ -66,6 +67,25 @@ h2 {
     color: white;
     text-decoration: none;
     font-size: 10pt;
+}
+
+#social_post #social_header img {
+    position: relative;
+    left: 14px;
+    top: 12px;
+}
+
+#social_header {
+    background-color: #382420;
+    height: 60px;
+}
+
+#social_post #social_header h3 {
+    font-size: 10pt;
+    color: white;
+    margin: 0px;
+    padding: 22px;
+    display: inline-block;
 }
 
 .app-container {
