@@ -66,3 +66,24 @@
     padding: 22px;
     display: inline-block;
 }
+.post-img{
+    width:623px;
+}
+
+.social_info{
+    clear:both;
+    margin-bottom:100px;
+}
+
+.social_stats_right{
+    float:right;
+}
+.social_stats_left{
+    float:left;
+}
+.social_stats_left .like-stats{
+    margin-right:100px;
+}
+.social_stats_right .comment-stats{
+    margin-right:20px;
+}
