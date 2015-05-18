@@ -5,6 +5,7 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+
 p, h2, h3, h1, h4{
     color:white;
 }
@@ -17,10 +18,12 @@ h2 {
     position: absolute;
     background-color: #af4931;
     width: 500px;
-    height: 100%;
+    height: 1005px;
     right: 0;
-    top:60px;
+    top: 0;
     display: none;
+    z-index: 0;
+
 
 }
 
@@ -28,7 +31,7 @@ h2 {
     height: 60px;
     background-color: #bb4b31;
     z-index: -10;
-
+    margin-bottom: 10px;
 }
 
 .icon-db {
@@ -154,6 +157,7 @@ right: 0px;
 /* active state, i.e. menu open */
 .cmn-toggle-switch__htx.active {
   background-color: #cb0032;
+  z-index: 1;
 }
 
 .cmn-toggle-switch__htx.active span {
