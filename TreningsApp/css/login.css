@@ -44,6 +44,14 @@ h2 {
     padding-left: 80px;
 }
 
+.kosthold-circle{
+    position: absolute;
+    top: -650px;
+}
+
+.kosthold-circle img{
+    width:500px;
+}
 /*HAMB*/
 .cmn-toggle-switch {
   display: block;
@@ -65,7 +73,6 @@ h2 {
 position: absolute;
 right: 0px;
 }
-
 
 .cmn-toggle-switch:focus {
   outline: none;
