@@ -5,6 +5,9 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+p, h2, h3, h1, h4{
+    color:white;
+}
 h2 {
     margin: 0px;
     padding-top: 10px;
@@ -59,6 +62,8 @@ h2 {
 }
 /*HAMB*/
 .cmn-toggle-switch {
+
+    background-color:#e65d3c;
   display: block;
   margin: 0;
   padding: 0;
