@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sosiale nyheter</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div class="loggedin">
+        <div id="ham-menu-open">
+            <header>
+            </header>
+            <nav class="ham-nav">
+                <ul>
+                    <li>Kosthold</li>
+                    <li>Trening</li>
+                    <li>Nyhets feed</li>
+                    <li>Inbox</li>
+                    <li>Dashboard</li>
+                </ul>
+            </nav>
+        </div>
+        <nav class="top-bar">
+
+            <button class="cmn-toggle-switch cmn-toggle-switch__htx">
+                <span>toggle menu</span>
+            </button>
+            <h2>Min Profil</h2>
+        </nav>
+
+        <nav class="social-nav">
+            <ul>
+                <li><a href="">Innlegg</a></li>
+                <li><a href="">Bilder</a></li>
+                <li><a href="">Min Trening</a></li>
+            </ul>
+        </nav>
+        <div id="social-container">
+            <div id="social_post">
+                <div id="social_header">
+                    <img src="assets/niykee_icon.png">
+                    <h3>Niykee Heaton</h3>
+                </div>
+                <img src="bilder/social_nicki.jpg">
+                <div class="social_info">
+                    <p>-Im bored today.</p>
+                    <div class="social_stats">
+                        <p class="like-stats">3,400</p>
+                        <p class="comment-stats">550</p>
+                    </div>
+                </div>
+            </div>
+            <div id="social_post">
+                <div id="social_header">
+                    <img src="assets/niykee_icon.png">
+                    <h3>Niykee Heaton</h3>
+                </div>
+                <img src="bilder/social_nicki.jpg">
+                <div class="social_info">
+                    <p>-Im bored today.</p>
+                    <div class="social_stats">
+                        <p class="like-stats">3,400</p>
+                        <p class="comment-stats">550</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav id="minProfil-nav-bot">
+            <ul>
+                <li><a href="">Kosthold</a></li>
+                <li><a href="">Program</a></li>
+                <li><a href="">Mål</a></li>
+            </ul>
+        </nav>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script>
+    $(function() {
+
+        function settEvent() {
+            $(".cmn-toggle-switch").click(function() {
+                $("#ham-menu-open").toggle();
+                $(this).toggleClass('active');
+            });
+        }
+
+        var init = function() {
+            settEvent();
+        }();
+
+
+    });
+    </script>
+</body>
+
+</html>
