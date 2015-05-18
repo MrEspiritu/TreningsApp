@@ -1,5 +1,5 @@
 body{
-    background-color:#141414;
+    background-color:#f2dfd2;
     margin:0 auto;
     padding: 0px;
     font-family: 'Open Sans', sans-serif;
@@ -18,11 +18,11 @@ h2 {
     position: absolute;
     background-color: #af4931;
     width: 500px;
-    height: 1005px;
+    height: 1073px;
     right: 0;
     top: 0;
     display: none;
-    z-index: 0;
+    z-index: 2;
 
 
 }
@@ -39,6 +39,34 @@ h2 {
     background-repeat: no-repeat;
     background-position: 12px 12px;
 }
+
+.icon-inbox {
+    background-image: url("../assets/email_icon.png");
+    background-repeat: no-repeat;
+    background-position: 12px 12px;
+}
+
+.icon-news {
+    background-image: url("../assets/nyhets_icon.png");
+    background-repeat: no-repeat;
+    background-position: 12px 12px;
+}
+
+.icon-training {
+    background-image: url("../assets/training_icon.png");
+    background-repeat: no-repeat;
+    background-position: 12px 12px;
+}
+
+.icon-kosthold {
+  background-image: url("../assets/kosthold_icon.png");
+    background-repeat: no-repeat;
+    background-position: 12px 12px;
+    background-size: 40px;
+}
+
+
+
 .ham-nav {
     position: absolute;
     bottom: 0px;
@@ -157,7 +185,7 @@ right: 0px;
 /* active state, i.e. menu open */
 .cmn-toggle-switch__htx.active {
   background-color: #cb0032;
-  z-index: 1;
+  z-index: 5;
 }
 
 .cmn-toggle-switch__htx.active span {
@@ -196,10 +224,11 @@ right: 0px;
 
 .loggedin {
     position: relative;
-    background-image: none;
+    background-color: #1b1b1b;
     width: 641px;
-    height: 1165px;
+    height: 1073px;
     margin: auto;
+
 }
 
 

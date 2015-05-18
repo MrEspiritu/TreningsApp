@@ -107,7 +107,8 @@ input.radio:focus ~ label:before {
 }
 
 .already-member{
-    margin-left:440px;
+    position: absolute;
+    right: 70px;
     color:white;
 }
 .already-member a{

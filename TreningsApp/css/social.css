@@ -3,6 +3,9 @@
 #social-nav-bot {
     background-color: #e65d3c;
     text-align: center;
+    position: relative;
+    bottom: 0px;
+    z-index: 1;
 }
 
 .social-nav {
@@ -21,11 +24,11 @@
     height: 28px;
     list-style: none;
     display: inline-block;
-    padding: 20px 73px;
+    padding: 20px 11%;
 }
 
 #social-nav-bot ul li {
-    padding: 20px 85px;
+    padding: 20px 12%;
 }
 
 
@@ -67,7 +70,7 @@
     display: inline-block;
 }
 .post-img{
-    width:623px;
+    width: 100%;
 }
 
 .social_info{
@@ -81,9 +84,44 @@
 .social_stats_left{
     float:left;
 }
+
+.social_stats_left > p {
+    margin-left: 10px;
+}
+
 .social_stats_left .like-stats{
     margin-right:100px;
 }
 .social_stats_right .comment-stats{
     margin-right:20px;
+}
+
+.comment_icon {
+
+    background-image: url("../assets/comment_icon.png");
+    background-repeat: no-repeat;
+    width:33px;
+    height:33px;
+    display: inline-block;
+    position: relative;
+    top:5px;
+    right: 10px;
+
+}
+
+.like_icon {
+
+    background-image: url("../assets/heart_icon.png");
+    background-repeat: no-repeat;
+     width:33px;
+   height:33px;
+   display: inline-block;
+   position: relative;
+    top:5px;
+    right: 10px;
+
+}
+
+.social_stats_right p {
+    display: inline-block;
 }

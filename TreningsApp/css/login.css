@@ -7,12 +7,13 @@ h2 {
 
 
 .app-container {
-    height: 1000px;
+    height: 1140px;
     margin: auto;
     position: relative;
     width: 641px;
     background-image: url("../bilder/bg-log-inn.jpg");
     background-repeat: no-repeat;
+        background-color: #1b1b1b;
 }
 
 .loggedin {
