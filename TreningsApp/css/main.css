@@ -19,6 +19,7 @@ h2 {
     width: 500px;
     height: 100%;
     right: 0;
+    top:60px;
     display: none;
 
 }
@@ -28,6 +29,12 @@ h2 {
     background-color: #bb4b31;
     z-index: -10;
 
+}
+
+.icon-db {
+    background-image: url("../assets/house_icon.png");
+    background-repeat: no-repeat;
+    background-position: 12px 12px;
 }
 .ham-nav {
     position: absolute;
