@@ -6,6 +6,9 @@
     <title>Sosiale nyheter</title>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600,400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/social.css">
+    <link href="css/jquery.circliful.css" rel="stylesheet" type="text/css" />
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery.circliful.js"></script>
 </head>
 
 <body>
@@ -19,12 +22,15 @@
         <div id="ham-menu-open">
             <header>
             </header>
+            <div id="kosthold-widget">
+                <div id="mittstilt">
+                    <div class="myStat" data-dimension="100" data-text="40%" data-info="Protein" data-width="0" data-fontsize="20" data-percent="40" data-fgcolor="#FFF" data-bgcolor="#813928" data-fill="#af4931" data-total="100" data-part="40" data-icon-color="#fff"></div>
+                    <div class="myStat" data-dimension="100" data-text="40%" data-info="Karbohydrater" data-width="0" data-fontsize="20" data-percent="40" data-fgcolor="#FFF" data-bgcolor="#813928" data-fill="#af4931" data-total="100" data-part="40" data-icon-color="#fff"></div>
+                    <div class="myStat" data-dimension="100" data-text="20%" data-info="Fett" data-width="0" data-fontsize="20" data-percent="40" data-fgcolor="#FFF" data-bgcolor="#813928" data-fill="#af4931" data-total="100" data-part="20" data-icon-color="#fff"></div>
+                </div>
+            </div>
             <nav class="ham-nav">
                 <!-- Kosthold section -->
-                <div class="kosthold-circle">
-                    <h2>mitt kosthold</h2>
-                    <img src="bilder/kosthold-sirkel.png">
-                </div>
                 <ul>
                     <li>Kosthold</li>
                     <li>Trening</li>
@@ -84,7 +90,11 @@
             </ul>
         </nav>
     </div>
-    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('.myStat').circliful();
+    });
+    </script>
     <script>
     $(function() {
 
@@ -97,6 +107,7 @@
 
         var init = function() {
             settEvent();
+
         }();
 
 
