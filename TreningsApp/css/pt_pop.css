@@ -1,0 +1,70 @@
+@import url("main.css");
+
+#container {
+    height: 877px;
+    overflow-y: scroll;
+}
+
+.bar, .progress {
+    width: 411px;
+    height: 35px;
+    display: block;
+    clear: both;
+
+
+}
+
+.bar {
+    background-color: white;
+    margin-left: 100px;
+}
+.progress {
+    background-color: #ffea51;
+    width: 340px;
+}
+
+.pt_button {
+    width: 211px;
+    height: 50px;
+    background-color: #000;
+    color: white;
+    font-size: 12pt;
+    border: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.pt_pop_profil {
+    display: inline-block;
+}
+
+
+
+.pt_pop_profil h3 {
+    font-size: 2.3em;
+    margin-bottom: 29px;
+    margin-top: 0px;
+}
+
+.pt_pop_profil h4 {
+    font-size: 18px;
+    background-color: grey;
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.pt_pop_profil img {
+    float: left;
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+
+}
+
+#info_right {
+    float: right;
+    margin-left: 100px;
+}

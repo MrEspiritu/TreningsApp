@@ -1,50 +1,6 @@
 @import url("main.css");
 
-#social-nav-bot {
-    background-color: #e65d3c;
-    text-align: center;
-    position: relative;
-    bottom: 0px;
-    z-index: 1;
-}
 
-.social-nav {
-    background-color: #b04930;
-    height: 68px;
-    text-align: center;
-}
-
-.social-nav ul, #social-nav-bot ul {
-    margin: 0px;
-    padding: 0px;
-    height: 68px;
-}
-
-.social-nav ul li, #social-nav-bot ul li {
-    height: 28px;
-    list-style: none;
-    display: inline-block;
-    padding: 20px 11%;
-}
-
-#social-nav-bot ul li {
-    padding: 20px 12%;
-}
-
-
-
-.social-nav ul li:nth-child(1),
-.social-nav ul li:nth-child(2),
-#social-nav-bot ul li:nth-child(1),
-#social-nav-bot ul li:nth-child(2){
-    border-right: 1px #963e29 solid;
-}
-
-.social-nav ul li a, #social-nav-bot ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 10pt;
-}
 
 #social_post #social_header img {
     position: relative;
@@ -57,7 +13,7 @@
     height: 60px;
 }
 
-#social-container {
+#container {
     height: 877px;
     overflow-y: scroll;
 }

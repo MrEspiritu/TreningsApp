@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PT - Populær</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/pt_pop.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+</head>
+
+<body>
+    <div class="loggedin">
+        <nav class="top-bar">
+            <button class="cmn-toggle-switch cmn-toggle-switch__htx">
+                <span>toggle menu</span>
+            </button>
+            <h2>PT - Populær</h2>
+        </nav>
+        <div id="ham-menu-open">
+            <header>
+            </header>
+            <div id="kosthold-widget">
+                <h3>Mitt kosthold</h3>
+                <div id="mittstilt">
+                    <div class="myStat" data-dimension="100" data-text="40%" data-info="Protein" data-width="0" data-fontsize="20" data-percent="40" data-fgcolor="#FFF" data-bgcolor="#813928" data-fill="#af4931" data-total="100" data-part="40" data-icon-color="#fff"></div>
+                    <div class="myStat" data-dimension="100" data-text="40%" data-info="Karbohydrater" data-width="0" data-fontsize="20" data-percent="40" data-fgcolor="#FFF" data-bgcolor="#813928" data-fill="#af4931" data-total="100" data-part="40" data-icon-color="#fff"></div>
+                    <div class="myStat" data-dimension="100" data-text="20%" data-info="Fett" data-width="0" data-fontsize="20" data-percent="40" data-fgcolor="#FFF" data-bgcolor="#813928" data-fill="#af4931" data-total="100" data-part="20" data-icon-color="#fff"></div>
+                </div>
+            </div>
+            <nav class="ham-nav">
+                <!-- Kosthold section -->
+                <ul>
+                    <li class="icon-kosthold">Kosthold</li>
+                    <li class="icon-training">Trening</li>
+                    <li class="icon-news">Nyhets feed</li>
+                    <li class="icon-inbox">Inbox</li>
+                    <li class="icon-db">Dashboard</li>
+                </ul>
+            </nav>
+        </div>
+        <div id="container">
+            <div class="pt_pop_liste">
+                <div class="pt_pop_profil">
+                    <h4>1</h4>
+                    <img src="bilder/pt_phung_profilbilde.jpg">
+                    <div id="info_right">
+
+                        <h3>Phung Lee</h3>
+                        <button class="pt_button" type="button">Vis profil</button>
+                        <button class="pt_button" type="button">Bestill time</button>
+                    </div>
+                    <span class="bar">
+                        <span class="progress" data-size="300"></span>
+                    </span>
+                </div>
+
+                <div class="pt_pop_profil">
+                    <h4>2</h4>
+                    <img src="bilder/pt_jet_profilbilde.jpg">
+                    <div id="info_right">
+
+                        <h3>Jet Lee</h3>
+                        <button class="pt_button" type="button">Vis profil</button>
+                        <button class="pt_button" type="button">Bestill time</button>
+                    </div>
+                    <span class="bar">
+                        <span class="progress" data-size="300"></span>
+                    </span>
+                </div>
+
+                <div class="pt_pop_profil">
+                    <h4>3</h4>
+                    <img src="bilder/pt_bruce_profilbilde.jpg">
+                    <div id="info_right">
+
+                        <h3>Bruce Lee</h3>
+                        <button class="pt_button" type="button">Vis profil</button>
+                        <button class="pt_button" type="button">Bestill time</button>
+                    </div>
+                    <span class="bar">
+                        <span class="progress" data-size="300"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <nav id="undermeny">
+            <ul>
+                <li><a href="">Populær</a></li>
+                <li><a href="">Nærmeste</a></li>
+                <li><a href="">Nyeste</a></li>
+            </ul>
+        </nav>
+    </div>
+    </div>
+    <script>
+    $(function() {
+
+        function settEvent() {
+            $(".cmn-toggle-switch").click(function() {
+                $("#ham-menu-open").toggle();
+                $(this).toggleClass('active');
+            });
+        }
+
+        var init = function() {
+            settEvent();
+
+        }();
+
+
+    });
+    </script>
+</body>
+
+</html>
