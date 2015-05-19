@@ -1,9 +1,16 @@
 @import url("login.css");
 
-.login-field{
-    top:150px;
-    position:absolute;
-    width:100%;
+.radio {
+    width:85%;
+      display: block;
+  margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+.login-field {
+    top: 70px;
+    position: absolute;
+    width: 100%;
 }
 
 .facebook-registrer-btn{
@@ -11,106 +18,77 @@
 }
 .register-btn{
     background-color: #e65d3c;
-    margin-top:70px;
 }
 .facebook-registrer-btn,.register-btn{
     color:white;
     text-align:center;
-    width:79%;
-    margin-bottom:5%;
-    margin-left:70px;
+    width:85%;
     padding:1px;
+      display: block;
+  margin: 0 auto;
 
+}
+a {
+    text-decoration: none;
 }
 
 .fancy {
     line-height: 0.5;
     text-align: center;
     color:white;
-    margin-bottom:100px;
-    margin-top:100px;
+    margin-bottom:50px;
+    margin-top:60px;
 }
 
-/* Radio buttons */
-.gender{
-    margin-left:220px;
-    margin-bottom:100px;
-    color:white;
-}
-.gender div {
-    clear:both;
-}
 
-.gender label {
-    width: 200px;
-    border-radius: 3px;
-    border: 1px solid #D1D3D4
-}
-
-/* hide input */
-input.radio:empty {
-    margin-left: -9999px;
-}
-
-/* style label */
-input.radio:empty ~ label {
-    position: relative;
-    float: left;
-    line-height: 2.5em;
-    text-indent: 3.25em;
-    margin-top: 2em;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-input.radio:empty ~ label:before {
-    position: absolute;
-    display: block;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    content: '';
-    width: 2.5em;
-    background: #D1D3D4;
-    border-radius: 3px 0 0 3px;
-}
-
-/* toggle hover */
-input.radio:hover:not(:checked) ~ label:before {
-    content:'\2714';
-    text-indent: .9em;
-    color: #C2C2C2;
-}
-
-input.radio:hover:not(:checked) ~ label {
-    color: #888;
-}
-
-/* toggle on */
-input.radio:checked ~ label:before {
-    content:'\2714';
-    text-indent: .9em;
-    color: #9CE2AE;
-    background-color: #e65d3c;
-}
-
-input.radio:checked ~ label {
-    color: #777;
-}
-
-/* radio focus */
-input.radio:focus ~ label:before {
-    box-shadow: 0 0 0 3px #999;
-}
 
 .already-member{
     position: absolute;
-    right: 70px;
+    right: 35px;
     color:white;
+    font-size: 12px;
 }
 .already-member a{
     color:#e65d3c;
+}
+
+label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 15px;
+    font-size: 13px;
+    color: white;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+label:before {
+    content: "";
+    display: inline-block;
+
+    width: 16px;
+    height: 16px;
+
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: #aaa;
+    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+}
+
+.radio label:before {
+    border-radius: 8px;
+}
+
+input[type=radio]:checked + label:before {
+    content: "\2022";
+    color: #e65d3c;
+    font-size: 30px;
+    text-align: center;
+    line-height: 18px;
 }

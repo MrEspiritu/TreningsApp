@@ -6,14 +6,12 @@ h2 {
 }
 
 
-.app-container {
-    height: 1140px;
+.login {
     margin: auto;
-    position: relative;
-    width: 641px;
     background-image: url("../bilder/bg-log-inn.jpg");
     background-repeat: no-repeat;
-        background-color: #1b1b1b;
+    background-size: 450px;
+    background-position: -10px 60px;
 }
 
 .loggedin {
@@ -34,27 +32,32 @@ h2 {
 }
 
 .login-field {
-    top: 450px;
+    top: 300px;
     position: absolute;
     width: 100%;
 }
 
 .username input,
 .password input {
-    margin-left: 70px;
+    margin-left: 0px;
     padding: 2%;
-    width: 75%;
-    margin-bottom: 5%;
+    width: 80%;
+    display: block;
+    margin : 0 auto;
+
+    margin-bottom: 4%;
 }
 
 .login-btn,
 .facebook-login-btn {
     color: white;
     text-align: center;
-    width: 79%;
-    margin-bottom: 5%;
-    margin-left: 70px;
+    width: 84.5%;
+    margin-left: 0px;
     padding: 1px;
+    display: block;
+     margin : 0 auto;
+     margin-bottom: 4%;
 }
 
 .login-btn {
@@ -66,13 +69,17 @@ h2 {
 }
 
 .forgot-password {
-    margin-left: 470px;
+    position: absolute;
+    right: 34px;
+    top: 235px;
+    font-size: 12px;
 }
 
 .fancy {
     line-height: 0.5;
     text-align: center;
     color: white;
+    margin-top: 50px;
 }
 
 .fancy span {
@@ -87,7 +94,7 @@ h2 {
     height: 5px;
     border-bottom: 1px solid #FFF;
     top: 0px;
-    width: 190px;
+    width: 150px;
 }
 
 .fancy span:before {
@@ -102,6 +109,6 @@ h2 {
 
 .register {
     color: white;
-    margin-top: 100px;
-    margin-left: 260px;
+    margin-top: 35px;
+      text-align: center;
 }

@@ -1,34 +1,44 @@
 @import url("main.css");
 
 #container {
-    height: 877px;
+    position: relative;
+    height: 75%;
+    width: 100%;
     overflow-y: scroll;
 }
 
-.bar, .progress {
-    width: 411px;
-    height: 35px;
-    display: block;
+.rating {
     clear: both;
-
+      margin-left: 68px;
 
 }
 
-.bar {
-    background-color: white;
-    margin-left: 100px;
+.filled-star {
+
+    background-image: url("../assets/filled_star.png");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    width:33px;
+    height:33px;
+    display: inline-block;
+
 }
-.progress {
-    background-color: #ffea51;
-    width: 340px;
+
+.notfilled-star {
+    background-image: url("../assets/not_filled_star.png");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    width:33px;
+    height:33px;
+    display: inline-block;
 }
 
 .pt_button {
-    width: 211px;
-    height: 50px;
+    width: 181px;
+      height: 38px;
     background-color: #000;
     color: white;
-    font-size: 12pt;
+    font-size: 10pt;
     border: none;
     display: block;
     margin-bottom: 10px;
@@ -41,7 +51,7 @@
 
 
 .pt_pop_profil h3 {
-    font-size: 2.3em;
+    font-size: 1.7em;
     margin-bottom: 29px;
     margin-top: 0px;
 }
@@ -58,13 +68,14 @@
 
 .pt_pop_profil img {
     float: left;
-    margin-left: 100px;
+    margin-left: 70px;
     margin-top: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
+    height: 140px;
 
 }
 
 #info_right {
     float: right;
-    margin-left: 100px;
+    margin-left: 25px;
 }

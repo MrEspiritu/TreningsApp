@@ -1,8 +1,8 @@
 @import url("main.css");
 
 .treningsmeny {
-    height:31%;
-    width: 49.65%;
+    height:30%;
+    width: 49.47%;
     display: inline-block;
     margin-bottom: 5px;
     text-align: center;
@@ -10,7 +10,7 @@
 
 .treningsmeny p {
     position: relative;
-    margin-top: 135px;
+    margin-top: 85px;
     background: rgba(250,250,250,0.5);
     padding: 20px 0;
     color: #1b1b1b;
