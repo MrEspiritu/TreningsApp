@@ -1,14 +1,10 @@
-@import url("social.css");
-
-
-#social-nav-bot ul li {
-    padding: 20px 80px;
-}
+@import url("main.css");
 
 #profilePicSect img{
 	margin: auto;
 	display: block;
-	margin-top: 100px;
+	margin-top: 20px;
+    height: 70px;
 }
 
 #profilePicSect p{

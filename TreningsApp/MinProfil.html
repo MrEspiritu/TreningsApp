@@ -6,13 +6,24 @@
     <title>Sosiale nyheter</title>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600,400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/minProfil.css">
+    <link href="css/jquery.circliful.css" rel="stylesheet" type="text/css" />
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery.circliful.js"></script>
 </head>
 
 <body>
-    <div class="loggedin">
+    <div class="app">
         <div id="ham-menu-open">
             <header>
             </header>
+            <div id="kosthold-widget">
+                <h3>Mitt kosthold</h3>
+                <div id="mittstilt">
+                    <div class="myStat" data-dimension="80" data-text="40%" data-info="Protein" data-width="0" data-fontsize="20" data-percent="40" data-fgcolor="#FFF" data-bgcolor="#813928" data-fill="#af4931" data-total="100" data-part="40" data-icon-color="#fff"></div>
+                    <div class="myStat" data-dimension="80" data-text="40%" data-info="Karbohydrater" data-width="0" data-fontsize="20" data-percent="40" data-fgcolor="#FFF" data-bgcolor="#813928" data-fill="#af4931" data-total="100" data-part="40" data-icon-color="#fff"></div>
+                    <div class="myStat" data-dimension="80" data-text="20%" data-info="Fett" data-width="0" data-fontsize="20" data-percent="40" data-fgcolor="#FFF" data-bgcolor="#813928" data-fill="#af4931" data-total="100" data-part="20" data-icon-color="#fff"></div>
+                </div>
+            </div>
             <nav class="ham-nav">
                 <ul>
                     <li>Kosthold</li>
@@ -31,22 +42,22 @@
             <h2>Min Profil</h2>
         </nav>
 
-        <nav class="social-nav">
+        <nav id="overmeny">
             <ul>
-                <li><a href="">Profil</a></li>
+                <li class="active"><a href="">Profil</a></li>
                 <li><a href="">Bilder</a></li>
                 <li><a href="">Innlegg</a></li>
             </ul>
         </nav>
         <div id="social-container">
-            
+
             <section id = "profilePicSect">
                 <img src = "bilder/profilepic.png">
                 <p>Shallan</p>
             </section>
 
         </div>
-        <nav id="social-nav-bot">
+        <nav id="undermeny">
             <ul>
                 <li><a href="">Kosthold</a></li>
                 <li><a href="">Program</a></li>
@@ -54,7 +65,11 @@
             </ul>
         </nav>
     </div>
-    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+     <script>
+    $(document).ready(function() {
+        $('.myStat').circliful();
+    });
+    </script>
     <script>
     $(function() {
 
