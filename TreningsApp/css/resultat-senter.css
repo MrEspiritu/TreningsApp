@@ -1,12 +1,21 @@
 @import url("main.css");
 
 #senter-resultat td{
-  height: 100px;
+  height: 80px;
+
+
 
 }
-
-p {
-  margin: 0px;
+#senter-resultat {
+    width: 100%;
+    border-spacing: 0px;
 }
 
+#senter-resultat tr:nth-child(even) {
+    background: #77392a
+}
+
+td p {
+    margin: 0px;
+}
 
