@@ -58,7 +58,7 @@
 
 .pt_pop_profil h4 {
     font-size: 18px;
-    background-color: grey;
+    background-color: #bb4b31;
     text-align: center;
     height: 30px;
     width: 30px;
@@ -78,4 +78,14 @@
 #info_right {
     float: right;
     margin-left: 25px;
+}
+.rating-left{
+    float:left;
+}
+.rating-right{
+    float:right;
+}
+.rating-right p{
+    margin:0px;
+    padding:0px;
 }
