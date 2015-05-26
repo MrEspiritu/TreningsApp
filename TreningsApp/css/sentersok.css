@@ -1,0 +1,37 @@
+@import url("main.css");
+
+#fylke, #bydel, #postnummer, #treningssenter, #vissentersubmit {
+    width: 84.5%;
+     margin-bottom: 4%;
+     padding: 10px;
+}
+
+#soksenter-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#vissentersubmit {
+    text-transform: uppercase;
+    width:90.1%;
+    margin: 0 auto;
+    padding: 1px;
+      background-color: #e65d3c;
+      border: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#fylke, #bydel {
+
+   border: 0;
+   border-radius: 0;
+   height: 34px;
+   width: 90%;
+
+
+   }
+}
