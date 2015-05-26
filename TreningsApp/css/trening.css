@@ -6,20 +6,23 @@
     display: inline-block;
     margin-bottom: 5px;
     text-align: center;
+    background-color: #77392a;
 }
 
 .treningsmeny p {
     position: relative;
-    margin-top: 85px;
-    background: rgba(250,250,250,0.5);
+    margin-top: 120px;
     padding: 20px 0;
-    color: #1b1b1b;
+    color: white;
+}
+
+.ovelser, .treningsprogram, .pt, .treningssenter {
+    background-repeat: no-repeat;
+    background-position: 78px 60px;
 }
 
 .ovelser {
     background-image: url("../assets/ovelser.png");
-
-
 }
 
 .treningsprogram {
