@@ -308,3 +308,9 @@ right: 0px;
     left: 0;
     top: 10px;
 }
+
+#searchKnapp {
+  position: absolute;
+  right: 80px;
+  top: 15px;
+}
