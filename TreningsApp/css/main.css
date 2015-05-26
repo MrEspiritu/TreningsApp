@@ -302,3 +302,9 @@ right: 0px;
     text-decoration: none;
     font-size: 10pt;
 }
+
+#tilbakeKnapp {
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
