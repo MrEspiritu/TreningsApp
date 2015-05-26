@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PT - Populær</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/pt_pop.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=fontawesome">
+    <link rel="stylesheet" href="css/simplecalendar.css">
+    <link href="css/jquery.circliful.css" rel="stylesheet" type="text/css" />
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/simplecalendar.js"></script>
+    <script src="js/jquery.circliful.js"></script>
+
+</head>
+
+<body>
+    <div class="app">
+        <nav class="top-bar">
+            <a href="trening.html"><img id="tilbakeKnapp" src="assets/left.png" height="40px"></a>
+            <button class="cmn-toggle-switch cmn-toggle-switch__htx">
+                <span>toggle menu</span>
+            </button>
+            <h2>Kalender</h2>
+        </nav>
+        <div id="ham-menu-open">
+            <header>
+            </header>
+            <div id="kosthold-widget">
+                <h3>Mitt kosthold</h3>
+                <div id="mittstilt">
+                    <div class="myStat" data-dimension="80" data-text="40%" data-info="Protein" data-width="0" data-fontsize="20" data-percent="40" data-fgcolor="#FFF" data-bgcolor="#813928" data-fill="#af4931" data-total="100" data-part="40" data-icon-color="#fff"></div>
+                    <div class="myStat" data-dimension="80" data-text="40%" data-info="Karbohydrater" data-width="0" data-fontsize="20" data-percent="40" data-fgcolor="#FFF" data-bgcolor="#813928" data-fill="#af4931" data-total="100" data-part="40" data-icon-color="#fff"></div>
+                    <div class="myStat" data-dimension="80" data-text="20%" data-info="Fett" data-width="0" data-fontsize="20" data-percent="40" data-fgcolor="#FFF" data-bgcolor="#813928" data-fill="#af4931" data-total="100" data-part="20" data-icon-color="#fff"></div>
+                </div>
+            </div>
+            <nav class="ham-nav">
+                <!-- Kosthold section -->
+                <ul>
+                    <a href="kosthold.html">
+                        <li class="icon-kosthold">Kosthold</li>
+                    </a>
+                    <a href="trening.html">
+                        <li class="icon-training">Trening</li>
+                    </a>
+                    <a href="social.html">
+                        <li class="icon-news">Nyhetsfeed</li>
+                    </a>
+                    <a href="">
+                        <li class="icon-inbox">Inbox</li>
+                    </a>
+                    <a href="">
+                        <li class="icon-db">Dashboard</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+        <div class="calendar-container">
+            <div class="calendar">
+                <header>
+                    <h2 class="month"></h2>
+                    <a class="btn-prev fontawesome-angle-left" href="#"></a>
+                    <a class="btn-next fontawesome-angle-right" href="#"></a>
+                </header>
+                <table>
+                    <thead class="event-days">
+                        <tr></tr>
+                    </thead>
+                    <tbody class="event-calendar">
+                        <tr class="1"></tr>
+                        <tr class="2"></tr>
+                        <tr class="3"></tr>
+                        <tr class="4"></tr>
+                        <tr class="5"></tr>
+                    </tbody>
+                </table>
+                <div class="list">
+                    <div class="day-event" date-month="3" date-day="4">
+                        <a href="#" class="close fontawesome-remove"></a>
+                        <h2 class="title">Lorem ipsum 1</h2>
+                        <p class="date">2014-12-16</p>
+                        <p>Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok.</p>
+                        <label>
+                            <span class="read">Read more!</span>
+                        </label>
+                    </div>
+                    <div class="day-event" date-month="5" date-day="13">
+                        <a href="#" class="close fontawesome-remove"></a>
+                        <h2 class="title">Lorem ipsum 2</h2>
+                        <p class="date">2014-12-16</p>
+                        <p>Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok.</p>
+                        <label>
+                            <span class="read">Read more!</span>
+                        </label>
+                    </div>
+                    <div class="day-event" date-month="5" date-day="14">
+                        <a href="#" class="close fontawesome-remove"></a>
+                        <h2 class="title">Lorem ipsum 3</h2>
+                        <p class="date">2014-12-16</p>
+                        <p>Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok.</p>
+                        <label>
+                            <span class="read">Read more!</span>
+                        </label>
+                    </div>
+                    <div class="day-event" date-month="5" date-day="16">
+                        <a href="#" class="close fontawesome-remove"></a>
+                        <h2 class="title">Lorem ipsum 4</h2>
+                        <p class="date">2014-12-16</p>
+                        <p>Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok.</p>
+                        <label>
+                            <span class="read">Read more!</span>
+                        </label>
+                    </div>
+                    <div class="day-event" date-month="5" date-day="24">
+                        <a href="#" class="close fontawesome-remove"></a>
+                        <h2 class="title">Lorem ipsum 5</h2>
+                        <p class="date">2014-12-16</p>
+                        <p>Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok.</p>
+                        <label>
+                            <span class="read">Read more!</span>
+                        </label>
+                    </div>
+                    <div class="day-event" date-month="5" date-day="31">
+                        <a href="#" class="close fontawesome-remove"></a>
+                        <h2 class="title">Lorem ipsum 6</h2>
+                        <p class="date">2014-12-31</p>
+                        <p>Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok.</p>
+                        <label>
+                            <span class="read">Read more!</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    $(document).ready(function() {
+        $('.myStat').circliful();
+    });
+    </script>
+    <script>
+    $(function() {
+
+        function settEvent() {
+            $(".cmn-toggle-switch").click(function() {
+                $("#ham-menu-open").toggle();
+                $(this).toggleClass('active');
+            });
+        }
+
+        var init = function() {
+            settEvent();
+
+        }();
+
+
+    });
+    </script>
+</body>
+
+</html>
