@@ -1,0 +1,48 @@
+@import url("main.css");
+
+.kostholdmeny {
+    height:30%;
+    width: 49.47%;
+    display: inline-block;
+    margin-bottom: 5px;
+    text-align: center;
+    background-color: #77392a;
+}
+
+.kostholdmeny p {
+    position: relative;
+    margin-top: 120px;
+    padding: 20px 0;
+    color: white;
+}
+
+.ku, .gris, .fisk, .kylling, .vegetar {
+    background-repeat: no-repeat;
+    background-position: 78px 60px;
+}
+
+.ku {
+    background-image: url("../assets/ku.png");
+}
+
+.gris {
+    background-image: url("../assets/gris.png");
+
+}
+
+
+.fisk {
+    background-image: url("../assets/fisk.png");
+
+
+}
+
+.kylling {
+    background-image: url("../assets/kylling.png");
+
+
+}
+
+.vegetar {
+    background-image: url("../assets/vegetar.png");
+}
