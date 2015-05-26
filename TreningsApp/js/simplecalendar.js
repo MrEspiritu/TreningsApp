@@ -165,10 +165,10 @@ var calendar = {
      */
     function displayEvent() {
       $('tbody.event-calendar td').on('click', function(e) {
-        $('.day-event').slideUp('fast');
+        $('.day-event').slideUp('normal');
         var monthEvent = $(this).attr('date-month');
         var dayEvent = $(this).text();
-        $('.day-event[date-month="' + monthEvent + '"][date-day="' + dayEvent + '"]').slideDown('fast');
+        $('.day-event[date-month="' + monthEvent + '"][date-day="' + dayEvent + '"]').slideDown('normal');
       });
     };
 
@@ -176,7 +176,7 @@ var calendar = {
      * Close day-event
      */
     $('.close').on('click', function(e) {
-      $(this).parent().slideUp('fast');
+      $(this).parent().slideUp('normal');
     });
 
     /**
@@ -190,7 +190,7 @@ var calendar = {
         var eventDay = $(this).closest('.day-event').attr('date-day');
         var eventNumber = $(this).closest('.day-event').attr('data-number');
         $('.person-list').append('<div class="day" date-month="' + eventMonth + '" date-day="' + eventDay + '" data-number="' + eventNumber + '" style="display:none;">' + eventHtml + '</div>');
-        $('.day[date-month="' + eventMonth + '"][date-day="' + eventDay + '"]').slideDown('fast');
+        $('.day[date-month="' + eventMonth + '"][date-day="' + eventDay + '"]').slideDown('normal');
         $('.day').find('.close').remove();
         $('.day').find('.save').removeClass('save').addClass('remove');
         $('.day').find('.remove').next().addClass('hidden-print');
