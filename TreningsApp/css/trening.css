@@ -17,31 +17,27 @@
 }
 
 .ovelser {
-    background-image: url("../bilder/trening_ovelser.jpg");
+    background-image: url("../assets/ovelser.png");
 
 
 }
 
 .treningsprogram {
-    background-image: url("../bilder/trening_program.jpg");
+    background-image: url("../assets/treningsplan.png");
 
 
 }
 
-.kosthold {
-    background-image: url("../bilder/trening_kosthold.jpg");
 
-
-}
 
 .pt {
-    background-image: url("../bilder/trening_pt.jpg");
+    background-image: url("../assets/personligtrener.png");
 
 
 }
 
 .treningssenter {
-    background-image: url("../bilder/trening_treningssenter.jpg");
+    background-image: url("../assets/treningssenter.png");
 
 
 }
