@@ -1,0 +1,23 @@
+@import url("main.css");
+
+li {
+    color: white;
+}
+
+#container {
+    position: relative;
+    height: 91.1%;
+    overflow-y: scroll;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+ol {
+    clear:both;
+}
