@@ -16,7 +16,7 @@
     color: white;
 }
 
-.chest, .bein, .core, .cardio, .base {
+.chest, .bein, .core, .cardio, .base,.back,.shoulder {
     background-repeat: no-repeat;
     background-position: 78px 60px;
 }
@@ -34,6 +34,13 @@
 
 
 }
+.back {
+    background-image: url("../assets/back.png");
+}
+
+.shoulder {
+    background-image: url("../assets/shoulder.png");
+}
 
 
 
@@ -47,4 +54,10 @@
     background-image: url("../assets/cardio.png");
 
 
+}
+
+#container {
+    position: relative;
+    height: 91.1%;
+    overflow-y: scroll;
 }

@@ -74,6 +74,7 @@ h2 {
 
 
 
+
 .ham-nav {
     position: absolute;
     bottom: 0px;
@@ -90,7 +91,7 @@ h2 {
     background-color: #bb4b31;
     color: white;
     font-size: 14px;
-    height: 25px;
+    height: 35px;
     margin-top: 5px;
     padding-top: 15px;
     padding-left: 55px;
