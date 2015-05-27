@@ -1,0 +1,16 @@
+@import url("main.css");
+
+#container {
+    position: relative;
+    height: 91.1%;
+    overflow-y: scroll;
+}
+
+body {
+    color: white;
+}
+
+ul,h3 {
+    margin-left: 15px;
+}
+

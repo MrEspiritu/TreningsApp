@@ -1,0 +1,44 @@
+@import url("main.css");
+
+#senter-resultat td{
+  height: 80px;
+  padding:0px;
+
+
+}
+#senter-resultat {
+    width: 100%;
+    border-spacing: 0px;
+}
+
+#senter-resultat tr:nth-child(even) {
+    background: #77392a
+}
+
+td p {
+    margin: 0px;
+}
+img {display: block;}
+
+
+td {
+    color: white;
+
+}
+
+h5 {
+    color: white;
+}
+
+#logo {
+    position: absolute;
+    top: 140px;
+    left:125px;
+}
+
+#container {
+    position: relative;
+    height: 91.1%;
+    overflow-y: scroll;
+    text-align: center;
+}
