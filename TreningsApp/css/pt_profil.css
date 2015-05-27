@@ -1,0 +1,62 @@
+@import url("main.css");
+
+#container {
+    position: relative;
+    height: 75%;
+    width: 100%;
+    overflow-y: scroll;
+}
+.pt_button {
+    width: 181px;
+      height: 38px;
+    background-color: #000;
+    color: white;
+    font-size: 10pt;
+    border: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#info_right {
+    float: right;
+    margin-left: 55px;
+    width: 200px;
+}
+
+#profil {
+display: inline-block;
+}
+
+#profil img {
+float: left;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+
+}
+
+.rating {
+    clear: both;
+      margin-left: 15px;
+
+}
+
+.filled-star {
+
+    background-image: url("../assets/filled_star.png");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    width:33px;
+    height:33px;
+    display: inline-block;
+
+}
+
+.notfilled-star {
+    background-image: url("../assets/not_filled_star.png");
+    background-repeat: no-repeat;
+    background-size: 20px;
+    width:33px;
+    height:33px;
+    display: inline-block;
+}
