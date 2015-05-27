@@ -3,22 +3,23 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Oppskrifter</title>
+    <title>Trening</title>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600,400' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/oppskrifter.css">
+    <link rel="stylesheet" href="css/senterprofil.css">
     <link href="css/jquery.circliful.css" rel="stylesheet" type="text/css" />
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="js/jquery.circliful.js"></script>
+
 </head>
 
 <body>
     <div class="app">
         <nav class="top-bar">
-<a href="kosthold.html"><img id="tilbakeKnapp" src="assets/left.png" height="40px"></a>
+        <a href="oppskrifter.html"><img id="tilbakeKnapp" src="assets/left.png" height="40px"></a>
             <button class="cmn-toggle-switch cmn-toggle-switch__htx">
                 <span>toggle menu</span>
             </button>
-            <h2>Oppskrifter</h2>
+            <h2>Chilli-con-carne</h2>
         </nav>
         <div id="ham-menu-open">
             <header>
@@ -52,49 +53,11 @@
                 </ul>
             </nav>
         </div>
-        <div id="resultat-sentere">
-            <table id="senter-resultat">
-                <tr onclick="document.location = 'oppskriftspesifikk.html'">
-                    <td><img src="bilder/chillicon.jpg" height="80px" width="86px"></td>
-                    <td>
-                        <p>Chilli Con Carne</p>
+        <div id="container">
 
-                    </td>
-                    <td>
-                        <p>Legg til</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td><img src="bilder/kimchi.jpg" height="80px" width="86px"></td>
-                    <td>
-                        <p>Kimchi</p>
 
-                    </td>
-                    <td>
-                        <p>Legg til</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td><img src="bilder/kyllingramen.jpg" height="80px" width="86px"></td>
-                    <td>
-                        <p>Kylling ramen</p>
+             <img src="bilder/chillicon.jpg" height="200px" width="100%">
 
-                    </td>
-                    <td>
-                        <p>Legg til</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td><img src="bilder/skinkebiff.jpg" height="80px" width="86px"></td>
-                    <td>
-                        <p>Skine biff</p>
-
-                    </td>
-                    <td>
-                        <p>Legg til</p>
-                    </td>
-                </tr>
-            </table>
         </div>
     </div>
     </div>
@@ -103,7 +66,9 @@
         $('.myStat').circliful();
     });
     </script>
+
     <script src="js/hamburger-slide.js"></script>
+
 </body>
 
 </html>
