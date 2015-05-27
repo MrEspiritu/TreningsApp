@@ -94,11 +94,9 @@ float: left;
     display: none;
 }
 
-#sendmelding {
-    display: none;
-}
 
-#vissentersubmit {
+
+#vissentersubmit,#sendbtn {
     text-transform: uppercase;
     width:90.1%;
     text-align: center;
@@ -108,11 +106,13 @@ float: left;
 
 }
 
-#vissentersubmit:active {
+
+
+#vissentersubmit:active,#sendbtn:active {
     background-color: #64c148;
 }
 
-#vissentersubmit p {
+#vissentersubmit p,#sendbtn p {
     color: black;
     }
 
@@ -128,7 +128,7 @@ float: left;
 
 }
 
-#hendelser {
+#hendelser, #sendmelding {
     position: absolute;
     height: 40px;
     width: 100%;
@@ -138,6 +138,11 @@ float: left;
     padding: 5px 0px;
     text-align: center;
     display: none;
+}
+
+#sendmelding {
+    top: 252px;
+    height: 315px;
 }
 
 .boks-aktiv {

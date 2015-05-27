@@ -92,6 +92,11 @@
                 </div>
             </div>
             <div id="sendmelding">
+
+            <div id="sendbtn">
+                    <p>SEND MELDING</p>
+                </div>
+
             </div>
             <div id="bestillpt">
                 <h3>Velg type pakke:</h3>
@@ -140,15 +145,27 @@
                         }
                     });
 
+                     $(".sendmelding").click(function() {
+                        if($("#sendmelding").is(':hidden')) {
+                            $("#sendmelding").slideDown("slow");
+                        } else {
+
+                            $("#sendmelding").slideUp("slow");
+                        }
+                    });
+
                     $(".boks").click(function() {
                         $(this).toggleClass("boks-aktiv");
                     });
 
                     $("#vissentersubmit").click(function() {
+                        $("#hendelser p").val("Du har bestilt time.");
                         if($("#hendelser").is(":hidden")) {
                             $("#hendelser").slideDown("slow").delay(3000).fadeOut("slow");
                         }
                     });
+
+
                 }
 
                 var init = function() {
