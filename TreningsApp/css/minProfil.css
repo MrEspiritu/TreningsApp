@@ -1,9 +1,10 @@
 @import url("main.css");
 
-#profilePicSect img{
+#profilePic{
 	margin: auto;
 	display: block;
-	margin-top: 20px;
+	margin-top: 0px;
+	padding-top: 20px;
     height: 70px;
 }
 
@@ -18,10 +19,6 @@
 	overflow: auto;
 }
 
-#profilePic{
-	padding-top:20px;
-	margin-top: 0px;
-}
 
 #profilePicSect div{
  	width: 33%;
@@ -37,6 +34,54 @@
 	border-right: solid 1px #8b3d2a;
 }
 
-.menu-icon img{
-	
+.menu-icon{
+
+	margin:auto;
+	display: block;
+	padding-top: 20px;
+	width: 40px;
+	height: 40px;
 }
+
+.header{
+	height: 30px;
+	background-color: #e65d3c;
+	text-align: center;
+	color: white;
+}
+
+
+
+table tr td{
+	color: white;
+	padding-left: 10px;
+	border-bottom: 1px solid #e65d3c;
+	height: 50px;
+}
+
+table{
+	border-spacing: 0px;
+}
+
+#mineMaal tr td:nth-child(1){
+	padding-right: 130px;
+}
+
+#mineMaal tr td:nth-child(2){
+	padding-right: 25px;
+}
+
+#kosthold tr td:nth-child(1){
+	padding-right: 250px;
+}
+
+#kosthold tr td:nth-child(2){
+	padding-right: 25px;
+}
+
+
+
+
+
+
+
