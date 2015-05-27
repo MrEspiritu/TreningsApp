@@ -1,0 +1,50 @@
+@import url("main.css");
+
+.ovelsemeny {
+    height:30%;
+    width: 49.47%;
+    display: inline-block;
+    margin-bottom: 5px;
+    text-align: center;
+    background-color: #77392a;
+}
+
+.ovelsemeny p {
+    position: relative;
+    margin-top: 120px;
+    padding: 20px 0;
+    color: white;
+}
+
+.chest, .bein, .core, .cardio, .base {
+    background-repeat: no-repeat;
+    background-position: 78px 60px;
+}
+
+.chest {
+    background-image: url("../assets/chest.png");
+}
+
+.base {
+    background-image: url("../assets/base.png");
+}
+
+.bein {
+    background-image: url("../assets/leg.png");
+
+
+}
+
+
+
+.core {
+    background-image: url("../assets/core.png");
+
+
+}
+
+.cardio {
+    background-image: url("../assets/cardio.png");
+
+
+}
