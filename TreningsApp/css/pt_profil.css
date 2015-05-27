@@ -2,7 +2,7 @@
 
 #container {
     position: relative;
-    height: 75%;
+    height: 91.2%;
     width: 100%;
     overflow-y: scroll;
 }
@@ -38,6 +38,7 @@ float: left;
 .rating {
     clear: both;
       margin-left: 15px;
+      padding-bottom: 20px;
 
 }
 
@@ -60,3 +61,110 @@ float: left;
     height:33px;
     display: inline-block;
 }
+.rating-left{
+    float:left;
+    margin-right: 40px;
+}
+
+.rating-right p{
+    margin:0px;
+    padding:0px;
+
+}
+
+#profil_header {
+    background-color: rgb(47, 47, 47);
+    width: 102%;
+}
+
+#content {
+    margin-left: 20px;
+}
+
+#bestillpt {
+    background-color: #b04930;
+    height: 325px;
+    width: 100%;
+    position: absolute;
+    top: 252px;
+    padding: 0 20px;
+    height: 66.2%;
+    width: 100%;
+    overflow-y: scroll;
+    display: none;
+}
+
+#sendmelding {
+    display: none;
+}
+
+#vissentersubmit {
+    text-transform: uppercase;
+    width:90.1%;
+    text-align: center;
+    padding: 1px;
+      background-color: #6bd64a;
+      border: 0px;
+
+}
+
+#vissentersubmit:active {
+    background-color: #64c148;
+}
+
+#vissentersubmit p {
+    color: black;
+    }
+
+#inputboks {
+    text-transform: uppercase;
+    width:90.1%;
+    text-align: center;
+    padding: 1px;
+      background-color: white;
+      margin-bottom: 20px;
+      border: 0px;
+
+
+}
+
+#hendelser {
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    top: 60px;
+    background-color: #6f2e1e;
+    z-index:2000;
+    padding: 5px 0px;
+    text-align: center;
+    display: none;
+}
+
+.boks-aktiv {
+    border: 2px solid #73c547;
+}
+
+#inputboks p {
+    display: inline-block;
+    color: black;
+
+}
+
+input#number {
+
+      height: 43px;
+  width: 44px;
+  position: relative;
+  right: -120px;
+}
+
+.boks {
+    display: inline-block;
+    height: 130px;
+    width: 29.5%;
+    background-color: white;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
