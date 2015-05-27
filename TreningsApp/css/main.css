@@ -36,6 +36,17 @@ h2 {
     margin-bottom: 10px;
 }
 
+header p {
+  position: absolute;
+  top: 3px;
+  left: 65px;
+}
+
+#profilePic {
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
 .icon-db {
     background-image: url("../assets/house_icon.png");
     background-repeat: no-repeat;
