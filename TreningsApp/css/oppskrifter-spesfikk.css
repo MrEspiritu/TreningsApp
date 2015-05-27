@@ -14,3 +14,8 @@ ul,h3 {
     margin-left: 15px;
 }
 
+.float-right {
+    position: absolute;
+    right: 10px;
+    top: 210px;
+}
