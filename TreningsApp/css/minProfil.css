@@ -43,6 +43,10 @@
 	height: 40px;
 }
 
+#main-content{
+	margin-top: 10px;
+}
+
 .header{
 	height: 30px;
 	background-color: #e65d3c;
@@ -77,6 +81,15 @@ table{
 
 #kosthold tr td:nth-child(2){
 	padding-right: 25px;
+}
+
+h4{
+	display: inline;
+}
+
+span{
+	float: right;
+	padding-right: 10px;
 }
 
 
