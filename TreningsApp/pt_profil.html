@@ -22,6 +22,12 @@
         </nav>
         <div id="ham-menu-open">
             <header>
+                <a href="minProfil.html">
+                    <div>
+                        <img id="profilePic" src="bilder/profilepic.png" height="50px">
+                        <p>Shallan Paul</p>
+                    </div>
+                </a>
             </header>
             <div id="kosthold-widget">
                 <h3>Mitt kosthold</h3>
@@ -52,36 +58,105 @@
                 </ul>
             </nav>
         </div>
+        <div id="hendelser">
+            <p>Du har bestilt time.</p>
+        </div>
         <div id="container">
             <div id="profil">
-                <img src="bilder/pt_phung_profilbilde.jpg">
-                <div id="info_right">
-                    <p class="short-desc">
-                        Personlig trener og kostholdsveileder!
-                        <br>Jobbet som PT i 5 år!
-                    </p>
-                    <button class="pt_button" type="button">Send Melding</button>
-                    <button class="pt_button" type="button">Bestill time</button>
+                <div id="profil_header">
+                    <img src="bilder/pt_phung_profilbilde.jpg">
+                    <div id="info_right">
+                        <p class="short-desc">
+                            Personlig trener og kostholdsveileder!
+                            <br>Jobbet som PT i 5 år!
+                        </p>
+                        <button class="pt_button sendmelding" type="button">Send Melding</button>
+                        <button class="pt_button bestillpt" type="button">Bestill time</button>
+                    </div>
+                    <div class="rating">
+                        <div class="rating-left">
+                            <span class="filled-star"></span>
+                            <span class="filled-star"></span>
+                            <span class="filled-star"></span>
+                            <span class="filled-star"></span>
+                            <span class="filled-star"></span>
+                        </div>
+                        <div class="rating-right">
+                            <p>4333 vurderinger</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="rating">
-                    <div class="rating-left">
-                        <span class="filled-star"></span>
-                        <span class="filled-star"></span>
-                        <span class="filled-star"></span>
-                        <span class="filled-star"></span>
-                        <span class="filled-star"></span>
-                    </div>
-                    <div class="rating-right">
-                        <p>4333 vurderinger</p>
-                    </div>
+                <div id="content">
+                    <h3>Om meg</h3>
+                    <p>Hei jeg heter Phung Lee og er 23 år gammel.</p>
                 </div>
             </div>
-            <script>
-            $(document).ready(function() {
-                $('.myStat').circliful();
+            <div id="sendmelding">
+            </div>
+            <div id="bestillpt">
+                <h3>Velg type pakke:</h3>
+                <div class="boks">
+                    <h5>Standard</h5>
+                </div>
+                <div class="boks">
+                    <h5>Premium</h5>
+                </div>
+                <div class="boks">
+                    <h5>Ultimate</h5>
+                </div>
+
+                    <div id="inputboks">
+                        <p>Enkel timer</p>
+                        <input type="number" id="number" name="quantity" value="1" min="1" max="10">
+                    </div>
+
+                <div id="vissentersubmit">
+                    <p>BESTILL</p>
+                </div>
+            </div>
+        </div>
+        <nav id="undermeny">
+            <ul>
+                <li><a href="">Innlegg</a></li>
+                <li class="active-menu"><a href="">Om meg</a></li>
+                <li><a href="">Bilder</a></li>
+            </ul>
+        </nav>
+        <script>
+        $(document).ready(function() {
+            $('.myStat').circliful();
+        });
+        </script>
+        <script>
+            $(function(){
+
+                function settEvent() {
+                    $(".bestillpt").click(function() {
+                        if($("#bestillpt").is(':hidden')) {
+                            $("#bestillpt").slideDown("slow");
+                        } else {
+
+                            $("#bestillpt").slideUp("slow");
+                        }
+                    });
+
+                    $(".boks").click(function() {
+                        $(this).toggleClass("boks-aktiv");
+                    });
+
+                    $("#vissentersubmit").click(function() {
+                        if($("#hendelser").is(":hidden")) {
+                            $("#hendelser").slideDown("slow").delay(3000).fadeOut("slow");
+                        }
+                    });
+                }
+
+                var init = function() {
+                    settEvent();
+                }();
             });
-            </script>
-            <script src="js/hamburger-slide.js"></script>
+        </script>
+        <script src="js/hamburger-slide.js"></script>
 </body>
 
 </html>
