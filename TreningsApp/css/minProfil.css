@@ -11,3 +11,32 @@
 	color: white;
 	text-align: center;
 }
+
+#profilePicSect{
+	background-color: #a34731;
+	clear: both;
+	overflow: auto;
+}
+
+#profilePic{
+	padding-top:20px;
+	margin-top: 0px;
+}
+
+#profilePicSect div{
+ 	width: 33%;
+ 	
+ 	float: left;
+ 	border-top: 1px solid #8b3d2a;
+
+}
+
+#profilePicSect div:nth-child(2n){
+
+	border-left: solid 1px #8b3d2a;
+	border-right: solid 1px #8b3d2a;
+}
+
+.menu-icon img{
+	
+}

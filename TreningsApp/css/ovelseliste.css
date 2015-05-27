@@ -20,13 +20,10 @@ td p {
 }
 img {display: block;}
 
-table>tr>td {
-    font-size:12px;
-}
 
 td {
     color: white;
-    font-size: 10px;
+
 }
 
 h5 {
@@ -45,3 +42,4 @@ h5 {
     overflow-y: scroll;
     text-align: center;
 }
+
