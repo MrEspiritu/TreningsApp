@@ -1,0 +1,47 @@
+@import url("main.css");
+
+.welcome-msg{
+    text-align:center;
+}
+
+
+.dashboard-kosthold{
+    height:200px;
+    margin-top:60px;
+}
+
+.dashboard-kosthold, .dagens-mal{
+    text-align:center;
+    background-color: #77392a;
+}
+
+.dagens-mal{
+    margin-top:60px;
+    display:inline-block;
+    width:100%;
+}
+.left{
+    margin-left:5px;
+    float:left;
+}
+.right{
+    margin-right:5px;
+    float:right;
+}
+
+.settings{
+    margin-top:50px;
+    width:100%;
+}
+.settings-icon{
+    background-color: #77392a;
+    border-radius:50%;
+    height:60px;
+    width:60px;
+    margin-right:20px;
+}
+
+.settings-icon img{
+    padding-left:15px;
+    padding-top:14px;
+}
