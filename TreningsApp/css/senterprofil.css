@@ -19,3 +19,22 @@ td p {
     margin: 0px;
 }
 img {display: block;}
+
+table>tr>td {
+    font-size:12px;
+}
+
+td {
+    color: white;
+    font-size: 10px;
+}
+
+h5 {
+    color: white;
+}
+
+#logo {
+    position: absolute;
+    top: 140px;
+    left:125px;
+}
