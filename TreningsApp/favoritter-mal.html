@@ -3,22 +3,21 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Øvelser</title>
+    <title>Sosiale nyheter</title>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600,400' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/ovelseliste.css">
+    <link rel="stylesheet" href="css/favoritter.css">
     <link href="css/jquery.circliful.css" rel="stylesheet" type="text/css"/>
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="js/jquery.circliful.js"></script>
+    <script src="js/jquery.circliful.js"></script
 </head>
 
 <body>
 <div class="app">
     <nav class="top-bar">
-        <a href="ovelser.html"><img id="tilbakeKnapp" src="assets/left.png" height="40px"></a>
         <button class="cmn-toggle-switch cmn-toggle-switch__htx">
             <span>toggle menu</span>
         </button>
-        <h2>Øvelser</h2>
+        <h2>Favoritter</h2>
     </nav>
     <div id="ham-menu-open">
         <header>
@@ -59,51 +58,20 @@
             </ul>
         </nav>
     </div>
-    <div id="resultat-sentere">
-        <table id="senter-resultat">
-            <tr onclick="document.location = 'ovelsespesifikk.html'">
-                <td><img src="bilder/pullups.jpg" height="80px" width="86px"></td>
-                <td>
-                    <p>Pull up</p>
+    <nav id="overmeny">
+        <ul>
+            <li><a href="favoritter.html">Kosthold</a></li>
+            <li><a href="favoritter-trening.html">Trening</a></li>
+            <li class="active-menu"><a href="#">Mål</a></li>
+        </ul>
+    </nav>
+    <a href="favoritter-mal-input.html">
+        <div class="icon-section">
 
-                </td>
-                <td>
-                    <p>Legg til</p>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="bilder/muscleup.jpg" height="80px" width="86px"></td>
-                <td>
-                    <p>Muscle up</p>
-
-                </td>
-                <td>
-                    <p>Legg til</p>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="bilder/landmine.jpg" height="80px" width="86px"></td>
-                <td>
-                    <p>Land mine</p>
-
-                </td>
-                <td>
-                    <p>Legg til</p>
-                </td>
-            </tr>
-            <tr>
-                <td><img src="bilder/chinups.jpg" height="80px" width="86px"></td>
-                <td>
-                    <p>Chin up</p>
-
-                </td>
-                <td>
-                    <p>Legg til</p>
-                </td>
-            </tr>
-        </table>
-    </div>
-</div>
+            <img src="assets/ico-flag.png">
+            <p>Mållisten din er tom. Legg til her!</p>
+        </div>
+    </a>
 </div>
 <script>
     $(document).ready(function () {

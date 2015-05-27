@@ -1,0 +1,15 @@
+@import url("main.css");
+
+.icon-section{
+    margin-top:220px;
+    width:100%;
+}
+.icon-section img{
+    width:100px;
+    height:100px;
+    margin:auto;
+    display:block;
+}
+.icon-section p{
+    text-align:center;
+}
