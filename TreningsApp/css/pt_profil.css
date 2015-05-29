@@ -81,7 +81,7 @@ float: left;
     margin-left: 20px;
 }
 
-#bestillpt {
+#bestillpt, #sendmelding {
     background-color: #b04930;
     height: 325px;
     width: 100%;
@@ -116,6 +116,10 @@ float: left;
     color: black;
     }
 
+    #sendbtn {
+        margin-right: 0px;
+    }
+
 #inputboks {
     text-transform: uppercase;
     width:90.1%;
@@ -128,7 +132,7 @@ float: left;
 
 }
 
-#hendelser, #sendmelding {
+#hendelser {
     position: absolute;
     height: 40px;
     width: 100%;
@@ -142,7 +146,7 @@ float: left;
 
 #sendmelding {
     top: 252px;
-    height: 315px;
+
 }
 
 .boks-aktiv {
@@ -173,3 +177,43 @@ input#number {
 
 }
 
+#send_txtarea {
+   text-transform: uppercase;
+    width:90.1%;
+
+    padding: 1px;
+      background-color: white;
+      margin-bottom: 20px;
+      border: 0px;
+      height: 150px;
+}
+
+/*
+Are you sure confirmation box
+ */
+
+#confirmation{
+    height: 150px;
+    width: 81.1%;
+    position: absolute;
+    background-color: grey;
+    padding: 20px 20px;
+    margin-left: 20px;
+    top: 200px;
+    text-align: center;
+    display: none;
+}
+
+#areyousure {
+
+}
+
+#yesbtn, #nobtn {
+    width: 170px;
+      height: 38px;
+    background-color: #000;
+    color: white;
+    font-size: 10pt;
+    border: none;
+    margin-bottom: 10px;
+}

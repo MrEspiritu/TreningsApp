@@ -49,11 +49,11 @@
                     <a href="social.html">
                         <li class="icon-news">Nyhetsfeed</li>
                     </a>
-                    <a href="">
-                        <li class="icon-inbox">Inbox</li>
-                    </a>
-                    <a href="">
+                    <a href="dashboard.html">
                         <li class="icon-db">Dashboard</li>
+                    </a>
+                    <a href="logginn.html">
+                        <li class="icon-signout">Logg ut</li>
                     </a>
                 </ul>
             </nav>
@@ -92,11 +92,11 @@
                 </div>
             </div>
             <div id="sendmelding">
-
-            <div id="sendbtn">
+                <h3>Send melding</h3>
+                <textarea id="send_txtarea"></textarea>
+                <div id="sendbtn">
                     <p>SEND MELDING</p>
                 </div>
-
             </div>
             <div id="bestillpt">
                 <h3>Velg type pakke:</h3>
@@ -109,15 +109,20 @@
                 <div class="boks">
                     <h5>Ultimate</h5>
                 </div>
-
-                    <div id="inputboks">
-                        <p>Enkel timer</p>
-                        <input type="number" id="number" name="quantity" value="1" min="1" max="10">
-                    </div>
-
+                <div id="inputboks">
+                    <p>Enkel timer</p>
+                    <input type="number" id="number" name="quantity" value="1" min="1" max="10">
+                </div>
                 <div id="vissentersubmit">
                     <p>BESTILL</p>
                 </div>
+            </div>
+            <div id="confirmation">
+                <p id="areyousure">
+
+                </p>
+                <button id="yesbtn">Ja</button>
+                <button id="nobtn">Nei</button>
             </div>
         </div>
         <nav id="undermeny">
@@ -133,45 +138,80 @@
         });
         </script>
         <script>
-            $(function(){
+        $(function() {
 
-                function settEvent() {
-                    $(".bestillpt").click(function() {
-                        if($("#bestillpt").is(':hidden')) {
-                            $("#bestillpt").slideDown("slow");
+            function settEvent() {
+                $(".bestillpt").click(function() {
+                    if ($("#bestillpt").is(':hidden')) {
+                        $("#bestillpt").slideDown("slow");
+                    } else {
+
+                        $("#bestillpt").slideUp("slow");
+                    }
+                });
+
+                $(".sendmelding").click(function() {
+                    if($("#bestillpt").is(":visible")){
+                        $("#bestillpt").slideUp("slow");
+                    }
+                    if ($("#sendmelding").is(':hidden')) {
+                        $("#sendmelding").slideDown("slow");
+                    } else {
+
+                        $("#sendmelding").slideUp("slow");
+                    }
+                });
+
+                $(".boks").click(function() {
+                    $(this).toggleClass("boks-aktiv");
+                });
+
+                $("#vissentersubmit, #sendbtn").click(function() {
+                    $("#areyousure").text("Er du sikker på at du vil");
+                    var tekstconf = $("#areyousure").text();
+                    var trykketpaa;
+                    if ($(this).attr("id") == "vissentersubmit") {
+
+                        $("#areyousure").text(tekstconf + " bestille?");
+                        trykketpaa = "bestill";
+                    } else {
+                        $("#areyousure").text(tekstconf + " sende meldingen?");
+                        trykketpaa = "send";
+                    }
+                    $("#confirmation").slideDown("slow");
+
+                    $("#yesbtn").click(function() {
+                        if (trykketpaa == "bestill") {
+                            $("#hendelser p").text("Du har bestilt time.");
+                            trykketpaa = "";
                         } else {
-
-                            $("#bestillpt").slideUp("slow");
+                            $("#hendelser p").text("Du har sendt melding.");
+                            trykketpaa = "";
                         }
-                    });
 
-                     $(".sendmelding").click(function() {
-                        if($("#sendmelding").is(':hidden')) {
-                            $("#sendmelding").slideDown("slow");
-                        } else {
-
-                            $("#sendmelding").slideUp("slow");
-                        }
-                    });
-
-                    $(".boks").click(function() {
-                        $(this).toggleClass("boks-aktiv");
-                    });
-
-                    $("#vissentersubmit").click(function() {
-                        $("#hendelser p").val("Du har bestilt time.");
-                        if($("#hendelser").is(":hidden")) {
+                        if ($("#hendelser").is(":hidden")) {
+                            $("#confirmation").slideUp("slow");
                             $("#hendelser").slideDown("slow").delay(3000).fadeOut("slow");
+
                         }
+
                     });
 
+                    $("#nobtn").click(function() {
+                        $("#confirmation").slideUp("slow");
+                    });
+                });
 
-                }
 
-                var init = function() {
-                    settEvent();
-                }();
-            });
+
+
+
+            }
+
+            var init = function() {
+                settEvent();
+            }();
+        });
         </script>
         <script src="js/hamburger-slide.js"></script>
 </body>
