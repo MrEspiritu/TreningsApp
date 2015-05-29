@@ -9,15 +9,14 @@
     <link href="css/jquery.circliful.css" rel="stylesheet" type="text/css" />
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="js/jquery.circliful.js"></script>
-    <script
-src="http://maps.googleapis.com/maps/api/js">
-</script>
+    <script src="http://maps.googleapis.com/maps/api/js">
+    </script>
 </head>
 
 <body>
     <div class="app">
         <nav class="top-bar">
-        <a href="sentere-resultat.html"><img id="tilbakeKnapp" src="assets/left.png" height="40px"></a>
+            <a href="sentere-resultat.html"><img id="tilbakeKnapp" src="assets/left.png" height="40px"></a>
             <button class="cmn-toggle-switch cmn-toggle-switch__htx">
                 <span>toggle menu</span>
             </button>
@@ -25,11 +24,12 @@ src="http://maps.googleapis.com/maps/api/js">
         </nav>
         <div id="ham-menu-open">
             <header>
-            <a href="minProfil.html">
-            <div>
-            <img id ="profilePic" src = "bilder/profilepic.png" height="50px">
-            <p>Shallan Paul</p>
-            </div></a>
+                <a href="minProfil.html">
+                    <div>
+                        <img id="profilePic" src="bilder/profilepic.png" height="50px">
+                        <p>Shallan Paul</p>
+                    </div>
+                </a>
             </header>
             <div id="kosthold-widget">
                 <h3>Mitt kosthold</h3>
@@ -61,36 +61,25 @@ src="http://maps.googleapis.com/maps/api/js">
             </nav>
         </div>
         <div id="container">
-            <img id="logo" src="assets/logo-sats-elixia.png" height="25px">
-             <img src="bilder/satsakers.jpg" width="100%" height="200px">
-            <h5>Kontakt</h5>
-            <p>Akersgata SATS
-Akersgata 51
-0180 Oslo</p>
-<p>akersgata@satselixia.no</p>
-<p>23 30 77 45</p>
+        <img id="logo" src="assets/logo-sats-elixia.png" height="25px">
+            <img src="bilder/satsakers.jpg" width="100%" height="200px">
+        <div id="info">
 
+            <h5>Kontakt</h5>
+            <img class="icon" src="assets/addresse.png" height="20">
+            <p class="info">Akersgata SATS Akersgata 51 0180 Oslo</p>
+            <br>
+            <img class="icon" src="assets/email.png" height="20">
+            <p class="info">akersgata@satselixia.no</p>
+            <br>
+            <img class="icon" src="assets/telefon.png" height="20">
+            <p class="info">23 30 77 45</p>
+        </div>
+        <div id="apning">
             <h5>Åpningstider</h5>
-            <table>
-                <tr>
-                    <td>Mandag</td>
-                    <td>Tirsdag</td>
-                    <td>Onsdag</td>
-                    <td>Torsdag</td>
-                    <td>Fredag</td>
-                    <td>Lørdag</td>
-                    <td>Søndag</td>
-                </tr>
-                <tr>
-                    <td>09:00-23-00</td>
-                    <td>09:00-23-00</td>
-                    <td>09:00-23-00</td>
-                    <td>09:00-23-00</td>
-                    <td>09:00-23-00</td>
-                    <td>09:00-21-00</td>
-                    <td>09:00-21-00</td>
-                </tr>
-            </table>
+            <p class="apningp">Mandag-Fredag: 09:00 - 21:00</p>
+            <p class="apningp">Helg: 10:00 - 18:00</p>
+        </div>
             <div id="googleMap" style="width:100%;height:200px;"></div>
         </div>
     </div>
@@ -101,38 +90,36 @@ Akersgata 51
     });
     </script>
     <script>
-function initialize()
-{
-  var mapProp = {
-    center: new google.maps.LatLng(51.508742,-0.120850),
-    zoom:9,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-  };
-  var mapProp2 = {
-    center: new google.maps.LatLng(51.508742,-0.120850),
-    zoom:9,
-    mapTypeId: google.maps.MapTypeId.SATELLITE
-  };
-  var mapProp3 = {
-    center: new google.maps.LatLng(51.508742,-0.120850),
-    zoom:9,
-    mapTypeId: google.maps.MapTypeId.HYBRID
-  };
-  var mapProp4 = {
-    center: new google.maps.LatLng(51.508742,-0.120850),
-    zoom:9,
-    mapTypeId: google.maps.MapTypeId.TERRAIN
-  };
-  var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-  var map2 = new google.maps.Map(document.getElementById("googleMap2"),mapProp2);
-  var map3 = new google.maps.Map(document.getElementById("googleMap3"),mapProp3);
-  var map4 = new google.maps.Map(document.getElementById("googleMap4"),mapProp4);
-}
+    function initialize() {
+        var mapProp = {
+            center: new google.maps.LatLng(51.508742, -0.120850),
+            zoom: 9,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var mapProp2 = {
+            center: new google.maps.LatLng(51.508742, -0.120850),
+            zoom: 9,
+            mapTypeId: google.maps.MapTypeId.SATELLITE
+        };
+        var mapProp3 = {
+            center: new google.maps.LatLng(51.508742, -0.120850),
+            zoom: 9,
+            mapTypeId: google.maps.MapTypeId.HYBRID
+        };
+        var mapProp4 = {
+            center: new google.maps.LatLng(51.508742, -0.120850),
+            zoom: 9,
+            mapTypeId: google.maps.MapTypeId.TERRAIN
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        var map2 = new google.maps.Map(document.getElementById("googleMap2"), mapProp2);
+        var map3 = new google.maps.Map(document.getElementById("googleMap3"), mapProp3);
+        var map4 = new google.maps.Map(document.getElementById("googleMap4"), mapProp4);
+    }
 
-google.maps.event.addDomListener(window, 'load', initialize);
-</script>
+    google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
     <script src="js/hamburger-slide.js"></script>
-
 </body>
 
 </html>

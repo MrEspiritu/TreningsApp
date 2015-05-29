@@ -58,11 +58,12 @@
             </nav>
         </div>
 <div id="container">
-<img src="bilder/pullups.jpg" height="212px" width="218px">
-<img src="bilder/pullups2.jpg" height="212px" width="218px">
+<img src="bilder/pullups.jpg" class="float-left" height="212px" width="220px">
+<img src="bilder/pullups2.jpg" class="float-right" height="212px" width="221px">
+<div id="utforelse">
 <div>
 <h4 class="float-left">Utførelse</h4>
-<p class="float-right">Legg til i favoritter</p>
+<p class="float-right leggtilfavoritt">Legg til i favoritter</p>
 </div>
 <ol>
     <li>Grip the rings using a false grip, with the base of your palms on top of the rings. Initiate a pull up by pulling the elbows down to your side, flexing the elbows.</li>
@@ -70,6 +71,11 @@
     <li>Maintaining control and stability, extend through the elbow to complete the motion.</li>
     <li>Use care when lowering yourself to the ground.</li>
 </ol>
+</div>
+
+<div id="hendelser">
+            <p>Du har lagt til øvelsen i favoritter.</p>
+        </div>
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/HuuyDNGrCI8" frameborder="0" allowfullscreen></iframe>
 </div>
@@ -82,6 +88,21 @@
     });
     </script>
     <script src="js/hamburger-slide.js"></script>
+
+    <script>
+    $(function() {
+        var init = function() {
+            $(".leggtilfavoritt").click(function() {
+                 if ($("#hendelser").is(":hidden")) {
+                            $("#confirmation").slideUp("slow");
+                            $("#hendelser").slideDown("slow").delay(3000).fadeOut("slow");
+
+                        }
+            });
+        }();
+    });
+
+    </script>
 </body>
 
 </html>
