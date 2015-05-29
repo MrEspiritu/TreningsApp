@@ -45,3 +45,27 @@
     padding-left:15px;
     padding-top:14px;
 }
+
+
+
+#undermeny ul li {
+    padding: 10px 23px;
+      width: 56px;
+}
+
+
+
+#undermeny ul li:nth-child(3) {
+    border-right: 1px #963e29 solid;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#container {
+    position: relative;
+    height: 83%;
+    overflow-y: scroll;
+}
