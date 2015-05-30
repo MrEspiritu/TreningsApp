@@ -18,7 +18,10 @@
 td p {
     margin: 0px;
 }
-img {display: block;}
+
+#senterbilde {
+    display: block;
+}
 
 table>tr>td {
     font-size:12px;
@@ -62,9 +65,7 @@ p {
     font-weight: 200;
 }
 
-img {
-    display: block;
-}
+
 
 .icon {
     position: relative;

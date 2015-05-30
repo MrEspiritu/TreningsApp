@@ -43,7 +43,7 @@ h4 {
 
 }
 
-img {
+#container img {
     display: block;
 }
 
@@ -68,11 +68,11 @@ ol li:nth-child(odd) {
     background-color: #a9442c;
 }
 
-ul li:nth-child(odd) {
+#oppskrift-ul li:nth-child(odd) {
     background-color: #953c27;
 }
 
-ul {
+#oppskrift-ul {
     margin: 0px;
     margin-top: 40px;
 }
