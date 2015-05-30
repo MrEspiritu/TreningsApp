@@ -46,30 +46,6 @@
     margin-right:5px;
     float:right;
 }
-
-.settings{
-    margin-top:50px;
-    width:100%;
-}
-.settings-icon{
-    background-color: #B04930;
-    border-radius:50%;
-    height:60px;
-    width:60px;
-    position: absolute;
-    top: 22px;
-    right: 10px;
-}
-
-.settings-icon img{
-    padding-left:15px;
-    padding-top:14px;
-}
-
-
-
-
-
 a {
     color: white;
     text-decoration: none;
@@ -84,7 +60,7 @@ a {
 .dashboard-kosthold h3, .dagens-mal h3 {
     font-size: 20px;
     font-weight: 200;
-    color: #282828;
+    color: white;
 }
 
 #mal-ul {
@@ -96,8 +72,7 @@ a {
 
 #mal-ul li{
     padding: 10px 20px;
-    color: #282828;
-
+    color: white;
 }
 
 
