@@ -58,9 +58,17 @@
                 </ul>
             </nav>
         </div>
+
         <div id="hendelser">
             <p>Du har bestilt time.</p>
         </div>
+        <nav id="overmeny">
+            <ul>
+                <li><a href="">Innlegg</a></li>
+                <li class="active-menu"><a href="">Om meg</a></li>
+                <li><a href="">Bilder</a></li>
+            </ul>
+        </nav>
         <div id="container">
             <div id="profil">
                 <div id="profil_header">
@@ -125,13 +133,20 @@
                 <button id="nobtn">Nei</button>
             </div>
         </div>
-        <nav id="undermeny">
-            <ul>
-                <li><a href="">Innlegg</a></li>
-                <li class="active-menu"><a href="">Om meg</a></li>
-                <li><a href="">Bilder</a></li>
-            </ul>
-        </nav>
+
+
+        <div id="undermeny">
+        <ul>
+            <li><a href="dashboard.html"><img src="assets/house_icon.png" height="27"></a></li>
+            <li><a href="social.html"><img src="assets/nyhets_icon.png" height="27"></a></li>
+            <li id="active-undermeny"><a href="trening.html"><img src="assets/training_icon.png" height="27"></a></li>
+            <li>
+            <a href="kosthold.html"><img src="assets/kosthold_icon.png" height="27"></a></li>
+        </ul>
+
+
+
+        </div>
         <script>
         $(document).ready(function() {
             $('.myStat').circliful();
