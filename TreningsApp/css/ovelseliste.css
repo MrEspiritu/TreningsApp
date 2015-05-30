@@ -1,3 +1,5 @@
+
+
 @import url("main.css");
 
 #senter-resultat td{
@@ -13,6 +15,10 @@
 
 #senter-resultat tr:nth-child(even) {
     background: #77392a
+}
+
+#senter-resultat tr:nth-child(odd) {
+    background-color: #414040;
 }
 
 td p {

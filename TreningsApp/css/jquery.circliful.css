@@ -1,3 +1,4 @@
+
 .circliful {
     position: relative;
 }
@@ -10,7 +11,7 @@
 }
 
 .circle-info, .circle-info-half {
-	color: #ffffff;
+	color: #282828;
     top: 45px;
 }
 
@@ -27,4 +28,10 @@
 
 #mittstilt {
     text-align: center;
+}
+
+.circle-text {
+    font-family: 'Open Sans', sans-serif;
+    color: #282828;
+    font-weight: 200;
 }

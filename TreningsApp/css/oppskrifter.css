@@ -15,6 +15,10 @@
     background: #77392a
 }
 
+#senter-resultat tr:nth-child(odd) {
+    background: #414040;
+}
+
 td p {
     margin: 0px;
 }
