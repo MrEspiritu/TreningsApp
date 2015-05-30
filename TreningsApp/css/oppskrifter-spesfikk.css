@@ -10,12 +10,75 @@ body {
     color: white;
 }
 
-ul,h3 {
+ul,h4 {
     margin-left: 15px;
 }
 
 .float-right {
     position: absolute;
-    right: 10px;
+    right: 20px;
     top: 210px;
+}
+#utforelse {
+    background-color: #a9442c;
+    padding: 10px 20px;
+}
+
+.leggtilfavoritt {
+    font-size: 14px;
+    padding: 15px;
+
+    background-color: #993d28;
+    color: #5b2013;
+}
+
+h4 {
+    font-weight: 400;
+}
+
+
+#apning {
+    background-color: #953c27;
+    padding: 5px 20px;
+
+}
+
+img {
+    display: block;
+}
+
+#hendelser {
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    top: 0px;
+    background-color: #6f2e1e;
+    z-index:2000;
+    padding: 5px 0px;
+    text-align: center;
+    display: none;
+
+}
+
+.leggtilfavoritt:active {
+    background-color: #c24c31;
+}
+
+ol li:nth-child(odd) {
+    background-color: #a9442c;
+}
+
+ul li:nth-child(odd) {
+    background-color: #953c27;
+}
+
+ul {
+    margin: 0px;
+    margin-top: 40px;
+}
+
+ol li , ul li{
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 200;
 }

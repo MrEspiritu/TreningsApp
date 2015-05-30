@@ -16,9 +16,59 @@ li {
 
 .float-left {
     float: left;
+
+}
+
+h4 {
+    font-weight: 400;
 }
 
 ol {
     clear:both;
 }
 
+.leggtilfavoritt {
+    font-size: 14px;
+    padding: 15px;
+    background-color: #993d28;
+    color: #5b2013;
+}
+
+#utforelse {
+    background-color: #a9442c;
+    padding: 10px 20px;
+}
+
+ol li:nth-child(odd) {
+    background-color: #993d28;
+}
+
+ol li {
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+
+
+img {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+#hendelser {
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    top: 0px;
+    background-color: #6f2e1e;
+    z-index:2000;
+    padding: 5px 0px;
+    text-align: center;
+    display: none;
+
+}
+
+.leggtilfavoritt:active {
+    background-color: #c24c31;
+}

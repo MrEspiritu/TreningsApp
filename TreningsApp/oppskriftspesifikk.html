@@ -49,11 +49,11 @@
                     <a href="social.html">
                         <li class="icon-news">Nyhetsfeed</li>
                     </a>
-                    <a href="">
-                        <li class="icon-inbox">Inbox</li>
-                    </a>
-                    <a href="">
+                    <a href="dashboard.html">
                         <li class="icon-db">Dashboard</li>
+                    </a>
+                    <a href="logginn.html">
+                        <li class="icon-signout">Logg ut</li>
                     </a>
                 </ul>
             </nav>
@@ -62,9 +62,9 @@
 
 
              <img src="bilder/chillicon.jpg" height="200px" width="100%">
-
-             <h3>Ingredienser</h3>
-             <p class="float-right">Legg til i favoritter</p>
+            <div id="utforelse">
+             <h4>Ingredienser</h4>
+             <p class="float-right leggtilfavoritt">Legg til i favoritter</p>
              <ul>
                  <li>400 g renskåret svinekjøtt fra flatbiff eller filet skåret i terninger</li>
                  <li>2 ss margarin til steking
@@ -82,15 +82,13 @@
                  <li>1⁄2 ts malt spisskummen</li>
                  <li>1⁄2 ts salt</li>
 
-
-
-
-
-
-
-
              </ul>
-             <h3>Oppskrift</h3>
+             </div>
+                <div id="hendelser">
+            <p>Du har lagt oppskriften i favoritter.</p>
+        </div>
+              <div id="apning">
+             <h4>Oppskrift</h4>
              <ol>
                  <li> Ha margarin i en varm gryte. Vent til margarinen slutter å bruse, og stek svinekjøttet i to omganger, sammen med løk, hvitløk og chili.
 
@@ -98,6 +96,7 @@
 <li> Bland inn chilibønner, paprika og krydder. Kok et par minutter og smak til med salt.</li>
              </ol>
 
+        </div>
         </div>
     </div>
     </div>
@@ -108,7 +107,20 @@
     </script>
 
     <script src="js/hamburger-slide.js"></script>
+    <script>
+    $(function() {
+        var init = function() {
+            $(".leggtilfavoritt").click(function() {
+                 if ($("#hendelser").is(":hidden")) {
+                            $("#confirmation").slideUp("slow");
+                            $("#hendelser").slideDown("slow").delay(3000).fadeOut("slow");
 
+                        }
+            });
+        }();
+    });
+
+    </script>
 </body>
 
 </html>

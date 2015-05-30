@@ -42,7 +42,7 @@ header p {
   left: 65px;
 }
 
-#profilePic {
+header #profilePic {
   margin-left: 5px;
   margin-top: 5px;
 }
@@ -54,12 +54,13 @@ header p {
     background-size: 25px;
 }
 
-.icon-inbox {
-    background-image: url("../assets/email_icon.png");
+.icon-signout {
+    background-image: url("../assets/signout.png");
     background-repeat: no-repeat;
     background-position: 12px 12px;
     background-size: 25px;
 }
+
 
 .icon-news {
     background-image: url("../assets/nyhets_icon.png");

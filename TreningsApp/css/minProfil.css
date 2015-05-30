@@ -1,6 +1,6 @@
 @import url("main.css");
 
-#profilePic{
+#profilePic2{
 	margin: auto;
 	display: block;
 	margin-top: 0px;
@@ -22,7 +22,7 @@
 
 #profilePicSect div{
  	width: 33%;
- 	
+
  	float: left;
  	border-top: 1px solid #8b3d2a;
 
@@ -41,6 +41,10 @@
 	padding-top: 20px;
 	width: 40px;
 	height: 40px;
+}
+
+#main-content{
+	margin-top: 10px;
 }
 
 .header{
@@ -77,6 +81,15 @@ table{
 
 #kosthold tr td:nth-child(2){
 	padding-right: 25px;
+}
+
+h4{
+	display: inline;
+}
+
+span{
+	float: right;
+	padding-right: 10px;
 }
 
 
