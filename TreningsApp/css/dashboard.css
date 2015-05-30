@@ -68,16 +68,7 @@
 
 
 
-#undermeny ul li {
-    padding: 10px 23px;
-      width: 56px;
-}
 
-
-
-#undermeny ul li:nth-child(3) {
-    border-right: 1px #963e29 solid;
-}
 
 a {
     color: white;
@@ -114,6 +105,8 @@ a {
 #mal-ul li:nth-child(odd) {
     background-color: #A54730;
 }
+
+
 
 .rightpos {
     float: right;
