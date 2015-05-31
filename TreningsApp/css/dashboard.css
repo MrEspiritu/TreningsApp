@@ -51,11 +51,7 @@ a {
     text-decoration: none;
 }
 
-#container {
-    position: relative;
-    height: 83%;
-    overflow-y: scroll;
-}
+
 
 .dashboard-kosthold h3, .dagens-mal h3 {
     font-size: 20px;

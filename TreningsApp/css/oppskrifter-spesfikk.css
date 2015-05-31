@@ -1,10 +1,6 @@
 @import url("main.css");
 
-#container {
-    position: relative;
-    height: 91.1%;
-    overflow-y: scroll;
-}
+
 
 body {
     color: white;

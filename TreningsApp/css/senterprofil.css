@@ -46,12 +46,7 @@ h5 {
     left:125px;
 }
 
-#container {
-    position: relative;
-    height: 91.1%;
-    overflow-y: scroll;
 
-}
 
 p {
     display: inline-block;

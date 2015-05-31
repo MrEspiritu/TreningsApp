@@ -1,7 +1,7 @@
 @import url("main.css");
 
 .ovelsemeny {
-    height:30%;
+      height: 36%;
     width: 49.47%;
     display: inline-block;
     margin-bottom: 5px;
@@ -56,8 +56,3 @@
 
 }
 
-#container {
-    position: relative;
-    height: 91.1%;
-    overflow-y: scroll;
-}

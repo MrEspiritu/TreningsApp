@@ -4,11 +4,7 @@ li {
     color: white;
 }
 
-#container {
-    position: relative;
-    height: 91.1%;
-    overflow-y: scroll;
-}
+
 
 .float-right {
     float: right;

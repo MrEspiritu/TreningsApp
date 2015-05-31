@@ -22,7 +22,6 @@
 td p {
     margin: 0px;
 }
-img {display: block;}
 
 
 td {
@@ -40,10 +39,8 @@ h5 {
     left:125px;
 }
 
-#container {
-    position: relative;
-    height: 91.1%;
-    overflow-y: scroll;
-    text-align: center;
+
+#senter-resultat img {
+    display: block;
 }
 

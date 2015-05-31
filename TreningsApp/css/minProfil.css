@@ -87,7 +87,7 @@ h4{
 	display: inline;
 }
 
-span{
+.header span{
 	float: right;
 	padding-right: 10px;
 }

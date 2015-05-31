@@ -13,7 +13,6 @@
 
 <body>
     <div class="app">
-
         <nav class="top-bar">
             <button class="cmn-toggle-switch cmn-toggle-switch__htx">
                 <span>toggle menu</span>
@@ -22,11 +21,14 @@
         </nav>
         <div id="ham-menu-open">
             <header>
-            <a href="minProfil.html">
-            <div>
-            <img id ="profilePic" src = "bilder/profilepic.png" height="50px">
-            <p>Shallan Paul</p>
-            </div></a>
+                <div id="header_profil">
+                    <a href="minProfil.html">
+                        <div>
+                            <img src="bilder/profilepic.png" height="50px">
+                            <p>Shallan Paul</p>
+                        </div>
+                    </a>
+                </div>
             </header>
             <div id="kosthold-widget">
                 <h3>Mitt kosthold</h3>
@@ -57,46 +59,58 @@
                 </ul>
             </nav>
         </div>
-<div id="container">
-    <div class="welcome-msg">
-        <h2>God Morgen Shallan Paul</h2>
-        <p><a href="MinProfil.html">Gå til din profil</a></p>
-    </div>
-
-        <div id="kosthold-widget" class="dashboard-kosthold">
-            <h3>Dagens Kosthold</h3>
-            <div id="mittstilt">
-                <div class="myStat" data-dimension="80" data-text="40%" data-info="Protein" data-width="0" data-fontsize="20" data-percent="40" data-fgcolor="#FFF" data-bgcolor="#813928" data-fill="#af4931" data-total="100" data-part="40" data-icon-color="#fff"></div>
-                <div class="myStat" data-dimension="80" data-text="40%" data-info="Karbohydrater" data-width="0" data-fontsize="20" data-percent="40" data-fgcolor="#FFF" data-bgcolor="#813928" data-fill="#af4931" data-total="100" data-part="40" data-icon-color="#fff"></div>
-                <div class="myStat" data-dimension="80" data-text="20%" data-info="Fett" data-width="0" data-fontsize="20" data-percent="40" data-fgcolor="#FFF" data-bgcolor="#813928" data-fill="#af4931" data-total="100" data-part="20" data-icon-color="#fff"></div>
+        <div id="container">
+            <div class="welcome-msg">
+                <h2>God Morgen Shallan Paul</h2>
+                <p><a href="MinProfil.html">Gå til din profil</a></p>
+            </div>
+            <div id="kosthold-widget" class="dashboard-kosthold">
+                <h3>Dagens Kosthold</h3>
+                <div id="mittstilt">
+                    <div class="myStat" data-dimension="80" data-text="40%" data-info="Protein" data-width="0" data-fontsize="20" data-percent="40" data-fgcolor="#FFF" data-bgcolor="#813928" data-fill="#af4931" data-total="100" data-part="40" data-icon-color="#fff"></div>
+                    <div class="myStat" data-dimension="80" data-text="40%" data-info="Karbohydrater" data-width="0" data-fontsize="20" data-percent="40" data-fgcolor="#FFF" data-bgcolor="#813928" data-fill="#af4931" data-total="100" data-part="40" data-icon-color="#fff"></div>
+                    <div class="myStat" data-dimension="80" data-text="20%" data-info="Fett" data-width="0" data-fontsize="20" data-percent="40" data-fgcolor="#FFF" data-bgcolor="#813928" data-fill="#af4931" data-total="100" data-part="20" data-icon-color="#fff"></div>
+                </div>
+            </div>
+            <div class="dagens-mal">
+                <img src="assets/plus.png" height="20px" class="add-btn">
+                <h3>Mål til idag</h3>
+                <div class="mal-container">
+                    <ul id="mal-ul">
+                        <li>100 kg i markløft</li>
+                        <li>80 kg i knebøy</li>
+                    </ul>
+                </div>
             </div>
         </div>
 
-        <div class="dagens-mal">
-        <img src="assets/plus.png" height="20px" class="add-btn">
-            <h3>Mål til idag</h3>
-            <div class="mal-container">
-                <ul id="mal-ul">
-                    <li>100 kg i markløft</li>
-                    <li>80 kg i knebøy</li>
-                </ul>
-            </div>
-        </div>
-
-</div>
         <div id="undermeny">
-        <ul>
-            <li id="active-undermeny"><a href="dashboard.html"><img src="assets/house_icon.png" height="27"></a></li>
-            <li><a href="social.html"><img src="assets/nyhets_icon.png" height="27"></a></li>
-            <li><a href="trening.html"><img src="assets/training_icon.png" height="27"></a></li>
-            <li>
-            <a href="kosthold.html"><img src="assets/kosthold_icon.png" height="27"></a></li>
-        </ul>
+            <ul>
+                <a href="dashboard.html">
+                <li id="active-undermeny">
+                    <img src="assets/house_icon.png" height="27">
+                </li>
+                </a>
 
+                <a href="social.html">
+                <li>
+                    <img src="assets/nyhets_icon.png" height="27">
+                </li>
+                </a>
 
+                <a href="trening.html">
+                <li>
+                    <img src="assets/training_icon.png" height="27">
+                </li>
+                </a>
 
+                <a href="kosthold.html">
+                <li>
+                    <img src="assets/kosthold_icon.png" height="27">
+                </li>
+                </a>
+            </ul>
         </div>
-
     </div>
     <script>
     $(document).ready(function() {

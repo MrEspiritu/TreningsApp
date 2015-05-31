@@ -13,11 +13,7 @@
     height: 45px;
 }
 
-#container {
-    position: relative;
-    height: 75%;
-    overflow-y: scroll;
-}
+
 
 #social_post #social_header h3 {
     font-size: 10pt;

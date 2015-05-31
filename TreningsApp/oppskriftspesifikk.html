@@ -9,13 +9,12 @@
     <link href="css/jquery.circliful.css" rel="stylesheet" type="text/css" />
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="js/jquery.circliful.js"></script>
-
 </head>
 
 <body>
     <div class="app">
         <nav class="top-bar">
-        <a href="oppskrifter.html"><img id="tilbakeKnapp" src="assets/left.png" height="40px"></a>
+            <a href="oppskrifter.html"><img id="tilbakeKnapp" src="assets/left.png" height="40px"></a>
             <button class="cmn-toggle-switch cmn-toggle-switch__htx">
                 <span>toggle menu</span>
             </button>
@@ -23,11 +22,14 @@
         </nav>
         <div id="ham-menu-open">
             <header>
-            <a href="minProfil.html">
-            <div>
-            <img id ="profilePic" src = "bilder/profilepic.png" height="50px">
-            <p>Shallan Paul</p>
-            </div></a>
+                <div id="header_profil">
+                    <a href="minProfil.html">
+                        <div>
+                            <img src="bilder/profilepic.png" height="50px">
+                            <p>Shallan Paul</p>
+                        </div>
+                    </a>
+                </div>
             </header>
             <div id="kosthold-widget">
                 <h3>Mitt kosthold</h3>
@@ -59,56 +61,64 @@
             </nav>
         </div>
         <div id="container">
-
-
-             <img src="bilder/chillicon.jpg" height="200px" width="100%">
+            <img src="bilder/chillicon.jpg" height="200px" width="100%">
             <div id="utforelse">
-             <h4>Ingredienser</h4>
-             <p class="float-right leggtilfavoritt">Legg til i favoritter</p>
-             <ul id="oppskrift-ul">
-                 <li>400 g renskåret svinekjøtt fra flatbiff eller filet skåret i terninger</li>
-                 <li>2 ss margarin til steking
-</li>
-                 <li>1 stk finhakket løk
-</li>
-                 <li>2 båt finhakket hvitløk</li>
-                 <li>
-1 stk finhakket rød chili</li>
-                 <li>1 boks hermetiske tomater à 400 g</li>
-                 <li>1 boks chilibønner</li>
-                 <li>1 stk rød paprika i biter</li>
-                 <li>1 stk grønn paprika i biter</li>
-                 <li>11⁄2 ts chilipulver</li>
-                 <li>1⁄2 ts malt spisskummen</li>
-                 <li>1⁄2 ts salt</li>
-
-             </ul>
-             </div>
-                <div id="hendelser">
-            <p>Du har lagt oppskriften i favoritter.</p>
+                <h4>Ingredienser</h4>
+                <p class="float-right leggtilfavoritt">Legg til i favoritter</p>
+                <ul id="oppskrift-ul">
+                    <li>400 g renskåret svinekjøtt fra flatbiff eller filet skåret i terninger</li>
+                    <li>2 ss margarin til steking</li>
+                    <li>1 stk finhakket løk </li>
+                    <li>2 båt finhakket hvitløk</li>
+                    <li>1 stk finhakket rød chili</li>
+                    <li>1 boks hermetiske tomater à 400 g</li>
+                    <li>1 boks chilibønner</li>
+                    <li>1 stk rød paprika i biter</li>
+                    <li>1 stk grønn paprika i biter</li>
+                    <li>11⁄2 ts chilipulver</li>
+                    <li>1⁄2 ts malt spisskummen</li>
+                    <li>1⁄2 ts salt</li>
+                </ul>
+            </div>
+            <div id="hendelser">
+                <p>Du har lagt oppskriften i favoritter.</p>
+            </div>
+            <div id="apning">
+                <h4>Oppskrift</h4>
+                <ol>
+                    <li> Ha margarin i en varm gryte. Vent til margarinen slutter å bruse, og stek svinekjøttet i to omganger, sammen med løk, hvitløk og chili.
+                    </li>
+                    <li> Hell over hermetisk tomat og la det surre i 3-4 minutter.</li>
+                    <li> Bland inn chilibønner, paprika og krydder. Kok et par minutter og smak til med salt.</li>
+                </ol>
+            </div>
         </div>
-              <div id="apning">
-             <h4>Oppskrift</h4>
-             <ol>
-                 <li> Ha margarin i en varm gryte. Vent til margarinen slutter å bruse, og stek svinekjøttet i to omganger, sammen med løk, hvitløk og chili.
+        <div id="undermeny">
+            <ul>
+                <a href="dashboard.html">
+                <li>
+                    <img src="assets/house_icon.png" height="27">
+                </li>
+                </a>
 
-</li><li> Hell over hermetisk tomat og la det surre i 3-4 minutter.</li>
-<li> Bland inn chilibønner, paprika og krydder. Kok et par minutter og smak til med salt.</li>
-             </ol>
+                <a href="social.html">
+                <li>
+                    <img src="assets/nyhets_icon.png" height="27">
+                </li>
+                </a>
 
-        </div>
-        </div>
-         <div id="undermeny">
-        <ul>
-            <li><a href="dashboard.html"><img src="assets/house_icon.png" height="27"></a></li>
-            <li><a href="social.html"><img src="assets/nyhets_icon.png" height="27"></a></li>
-            <li><a href="trening.html"><img src="assets/training_icon.png" height="27"></a></li>
-            <li id="active-undermeny">
-            <a href="kosthold.html"><img src="assets/kosthold_icon.png" height="27"></a></li>
-        </ul>
+                <a href="trening.html">
+                <li>
+                    <img src="assets/training_icon.png" height="27">
+                </li>
+                </a>
 
-
-
+                <a href="kosthold.html">
+                <li id="active-undermeny">
+                    <img src="assets/kosthold_icon.png" height="27">
+                </li>
+                </a>
+            </ul>
         </div>
     </div>
     </div>
@@ -117,21 +127,19 @@
         $('.myStat').circliful();
     });
     </script>
-
     <script src="js/hamburger-slide.js"></script>
     <script>
     $(function() {
         var init = function() {
             $(".leggtilfavoritt").click(function() {
-                 if ($("#hendelser").is(":hidden")) {
-                            $("#confirmation").slideUp("slow");
-                            $("#hendelser").slideDown("slow").delay(3000).fadeOut("slow");
+                if ($("#hendelser").is(":hidden")) {
+                    $("#confirmation").slideUp("slow");
+                    $("#hendelser").slideDown("slow").delay(3000).fadeOut("slow");
 
-                        }
+                }
             });
         }();
     });
-
     </script>
 </body>
 

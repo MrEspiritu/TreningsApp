@@ -21,7 +21,15 @@
     </nav>
     <div id="ham-menu-open">
         <header>
-        </header>
+                <div id="header_profil">
+                    <a href="minProfil.html">
+                        <div>
+                            <img src="bilder/profilepic.png" height="50px">
+                            <p>Shallan Paul</p>
+                        </div>
+                    </a>
+                </div>
+            </header>
         <div id="kosthold-widget">
             <h3>Mitt kosthold</h3>
             <div id="mittstilt">
@@ -63,17 +71,32 @@
     <p>Treningslisten din er tom. Legg til her!</p>
 </div>
     <div id="undermeny">
-        <ul>
-            <li><a href="dashboard.html"><img src="assets/house_icon.png" height="27"></a></li>
-            <li><a href="social.html"><img src="assets/nyhets_icon.png" height="27"></a></li>
-            <li><a href="trening.html"><img src="assets/training_icon.png" height="27"></a></li>
-            <li id="active-undermeny">
-                <a href="kosthold.html"><img src="assets/kosthold_icon.png" height="27"></a></li>
-        </ul>
+            <ul>
+                <a href="dashboard.html">
+                <li id="active-undermeny">
+                    <img src="assets/house_icon.png" height="27">
+                </li>
+                </a>
 
+                <a href="social.html">
+                <li>
+                    <img src="assets/nyhets_icon.png" height="27">
+                </li>
+                </a>
 
+                <a href="trening.html">
+                <li>
+                    <img src="assets/training_icon.png" height="27">
+                </li>
+                </a>
 
-    </div>
+                <a href="kosthold.html">
+                <li>
+                    <img src="assets/kosthold_icon.png" height="27">
+                </li>
+                </a>
+            </ul>
+        </div>
 </div>
 <script>
     $(document).ready(function() {

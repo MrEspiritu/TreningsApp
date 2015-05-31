@@ -1,11 +1,6 @@
 @import url("main.css");
 
-#container {
-    position: relative;
-    height: 91.2%;
-    width: 100%;
-    overflow-y: scroll;
-}
+
 .pt_button {
     width: 181px;
       height: 38px;
