@@ -215,3 +215,9 @@ Are you sure confirmation box
     border: none;
     margin-bottom: 10px;
 }
+
+#container {
+  position: relative;
+  height: 525px;
+  overflow-y: scroll;
+}
