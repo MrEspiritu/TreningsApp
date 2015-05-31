@@ -22,7 +22,6 @@
 
 #profilePicSect div{
  	width: 33%;
-
  	float: left;
  	border-top: 1px solid #8b3d2a;
 
@@ -146,9 +145,10 @@ h4{
     z-index: 1000;
     height: 240px;
     width: 100%;
-      background-color: #b04930;
+    background-color: #b04930;
     padding: 10px 20px;
     display: none;
+      top: 145px;
 
 }
 
