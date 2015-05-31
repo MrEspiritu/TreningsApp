@@ -140,3 +140,78 @@ h4{
 #mal-ul li:nth-child(odd) {
     background-color: #A54730;
 }
+
+#addmaal {
+    position: absolute;
+    z-index: 1000;
+    height: 240px;
+    width: 100%;
+      background-color: #b04930;
+    padding: 10px 20px;
+    display: none;
+
+}
+
+#addmaal input {
+    width: 389px;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+}
+
+#maalbtn {
+    text-transform: uppercase;
+    width: 402px;
+    text-align: center;
+    padding: 1px;
+    background-color: #6bd64a;
+    border: 0px;
+    height: 60px;
+
+}
+
+#maalbtn:active {
+    background-color: #64c148;
+}
+
+#maalbtn p {
+    color: black;
+    }
+
+#hendelser {
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    top: 0px;
+    background-color: #6f2e1e;
+    z-index:2000;
+    padding: 5px 0px;
+    text-align: center;
+    display: none;
+}
+
+#confirmation{
+    z-index: 2000;
+    height: 150px;
+    width: 81.1%;
+    position: absolute;
+    background-color: grey;
+    padding: 20px 20px;
+    margin-left: 20px;
+    top: 200px;
+    text-align: center;
+    display: none;
+}
+
+#areyousure {
+
+}
+
+#yesbtn, #nobtn {
+    width: 170px;
+      height: 38px;
+    background-color: #000;
+    color: white;
+    font-size: 10pt;
+    border: none;
+    margin-bottom: 10px;
+}

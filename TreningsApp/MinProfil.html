@@ -60,6 +60,23 @@
             <h2>Min Profil</h2>
         </nav>
         <div id="container">
+        <div id="addmaal">
+            <h3>Legg til mål</h3>
+            <input id="maal-tittel" type="text" placeholder="Tittel">
+            <input id="maal-dato" type="text" placeholder="Dato">
+            <button id="maalbtn">LEGG TIL MÅL</button>
+
+        </div>
+        <div id="hendelser">
+            <p>Du har bestilt time.</p>
+        </div>
+        <div id="confirmation">
+                <p id="areyousure">
+
+                </p>
+                <button id="yesbtn">Ja</button>
+                <button id="nobtn">Nei</button>
+            </div>
             <div id="social-container">
                 <section id="profilePicSect">
                     <img id="profilePic2" src="bilder/profilepic.png">
@@ -78,7 +95,7 @@
                 </section>
                 <section id="main-content">
 
-                    <div class="dagens-mal">
+                    <div class="dagens-mal maal">
                         <img src="assets/plus.png" height="20px" class="add-btn">
                         <h3>Mine mål</h3>
                         <div class="mal-container">
@@ -90,7 +107,7 @@
                         </div>
                     </div>
 
-                     <div class="dagens-mal">
+                     <div class="dagens-mal kosthold">
                         <img src="assets/plus.png" height="20px" class="add-btn">
                         <h3>Dagens kosthold</h3>
                         <div class="mal-container">
@@ -107,6 +124,7 @@
                 </section>
             </div>
         </div>
+
         <div id="undermeny">
             <ul>
                 <a href="dashboard.html">
@@ -135,6 +153,64 @@
     <script>
     $(document).ready(function() {
         $('.myStat').circliful();
+    });
+    </script>
+
+    <script>
+    $(function(){
+
+
+
+        function addMaal() {
+            var maaltittelverdi = $("#maal-tittel").val();
+            var maaldatoverdi = $("#maal-dato").val();
+            var maalul = $(".maal #mal-ul");
+            var test = $("<li>"+maaltittelverdi+"<span class='float-right'>"+maaldatoverdi+"</span></li>");
+
+
+            $("#areyousure").text("Er du sikker på at du vil legge til mål");
+                var tekstconf = $("#areyousure").text();
+                var trykketpaa;
+
+                $("#confirmation").slideDown("slow");
+
+                    $("#yesbtn").click(function() {
+
+                            $("#hendelser p").text("Du har lagt til mål");
+
+                            $(maalul).append(test);
+                            $("#addmaal").fadeOut();
+
+
+                        if ($("#hendelser").is(":hidden")) {
+                            $("#confirmation").slideUp("slow");
+                            $("#hendelser").slideDown("slow").delay(3000).fadeOut("slow");
+
+                        }
+
+                    });
+
+                    $("#nobtn").click(function() {
+                        $("#confirmation").slideUp("slow");
+                        $("#addmaal").fadeOut();
+
+                    });
+
+
+
+        }
+
+        function settEvents() {
+            $(".maal .add-btn").click(function() {
+                $("#addmaal").fadeIn();
+            });
+
+            $("#maalbtn").click(addMaal);
+        }
+
+        var init = function() {
+            settEvents();
+        }();
     });
     </script>
     <script src="js/hamburger-slide.js"></script>
