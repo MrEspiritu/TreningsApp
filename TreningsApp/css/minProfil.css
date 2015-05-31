@@ -92,9 +92,46 @@ h4{
 	padding-right: 10px;
 }
 
+.dagens-mal{
+    text-align:center;
+    background-color: #B04930;
+}
+
+.dagens-mal{
+    margin-top:10px;
+    display:inline-block;
+    width:100%;
+}
+
+.dagens-mal h3 {
+    font-size: 20px;
+    font-weight: 200;
+    color: white;
+}
+
+
+.add-btn {
+    position: absolute;
+    right: 20px;
+    top: 358px;
+}
 
 
 
+#mal-ul {
+    text-align: left;
+    list-style: none;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+#mal-ul li{
+    padding: 10px 20px;
+    color: white;
+}
 
 
 
+#mal-ul li:nth-child(odd) {
+    background-color: #A54730;
+}
