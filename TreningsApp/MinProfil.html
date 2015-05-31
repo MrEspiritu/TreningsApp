@@ -14,7 +14,6 @@
 <body>
     <div class="app">
         <div id="ham-menu-open">
-
             <header>
                 <div id="header_profil">
                     <a href="minProfil.html">
@@ -54,114 +53,91 @@
             </nav>
         </div>
         <nav class="top-bar">
-        <a href="dashboard.html"><img id="tilbakeKnapp" src="assets/left.png" height="40px"></a>
-
+            <a href="dashboard.html"><img id="tilbakeKnapp" src="assets/left.png" height="40px"></a>
             <button class="cmn-toggle-switch cmn-toggle-switch__htx">
                 <span>toggle menu</span>
             </button>
             <h2>Min Profil</h2>
         </nav>
         <div id="container">
-        <div id="social-container">
+            <div id="social-container">
+                <section id="profilePicSect">
+                    <img id="profilePic2" src="bilder/profilepic.png">
+                    <p>Shallan</p>
+                    <div><img class="menu-icon" src="assets/ico-innlegg.png">
+                        <p>Skriv innlegg</p>
+                    </div>
+                    <div><img class="menu-icon" src="assets/ico-gallery.png">
+                        <p>Bilder</p>
+                    </div>
+                    <a href="favoritter.html">
+                        <div><img class="menu-icon" src="assets/ico-favourite.png">
+                            <p>Mine favoritter</p>
+                        </div>
+                    </a>
+                </section>
+                <section id="main-content">
 
-            <section id = "profilePicSect">
-                <img id ="profilePic2" src = "bilder/profilepic.png">
-                <p>Shallan</p>
+                    <div class="dagens-mal">
+                        <img src="assets/plus.png" height="20px" class="add-btn">
+                        <h3>Mine mål</h3>
+                        <div class="mal-container">
+                            <ul id="mal-ul">
+                                <li>Løpe Marathon <span class="float-right">Imorgen</span></li>
+                                <li>Syke hjemmefra til Oslo <span class="float-right">06/24/2015</span></li>
 
-                <div><img class="menu-icon" src="assets/ico-innlegg.png">
-                    <p>Skriv innlegg</p>
-                </div>
-                <div><img class="menu-icon" src="assets/ico-gallery.png">
-                    <p>Bilder</p>
-                </div>
-                <a href="favoritter.html">
-                <div><img class="menu-icon" src="assets/ico-favourite.png">
-                    <p>Mine favoritter</p>
-                </div>
-                </a>
-            </section>
+                            </ul>
+                        </div>
+                    </div>
 
-            <section id ="main-content">
+                     <div class="dagens-mal">
+                        <img src="assets/plus.png" height="20px" class="add-btn">
+                        <h3>Dagens kosthold</h3>
+                        <div class="mal-container">
+                            <ul id="mal-ul">
+                                <li>Chilli con carne <span class="float-right">560 Kcal</span></li>
+                                <li>Sushi 8 biter<span class="float-right">356 Kcal</span></li>
 
-                <div class="dagens-mal">
-                <img src="assets/plus.png" height="20px" class="add-btn">
-                <h3>Mål til idag</h3>
-                <div class="mal-container">
-                    <ul id="mal-ul">
-                        <li>100 kg i markløft</li>
-                        <li>80 kg i knebøy</li>
-                    </ul>
-                </div>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+                </section>
             </div>
-
-                <div class = "header">
-                    <h4>Mine Mål</h4>
-                    <span>+</span>
-                </div>
-                <table id = "mineMaal">
-                    <tr>
-                        <td>Løpe Marathon</td>
-                        <td>Imorgen</td>
-                    </tr>
-                    <tr>
-                        <td>Sykle hjemmefra til Oslo</td>
-                        <td>06/24/2015</td>
-                    </tr>
-                </table>
-
-                <div class = "header">
-                    <h4>Dagens kosthold</h4>
-                    <span>+</span>
-                </div>
-                <table id="kosthold">
-                    <tr>
-                        <td>Kyllingfilet</td>
-                        <td>145 kcl</td>
-                    </tr>
-                    <tr>
-                        <td>Sushi 8 biter</td>
-                        <td>150 kcl</td>
-                    </tr>
-                </table>
-
-            </section>
-
-        </div>
         </div>
         <div id="undermeny">
             <ul>
                 <a href="dashboard.html">
-                <li>
-                    <img src="assets/house_icon.png" height="27">
-                </li>
+                    <li>
+                        <img src="assets/house_icon.png" height="27">
+                    </li>
                 </a>
-
                 <a href="social.html">
-                <li>
-                    <img src="assets/nyhets_icon.png" height="27">
-                </li>
+                    <li>
+                        <img src="assets/nyhets_icon.png" height="27">
+                    </li>
                 </a>
-
                 <a href="trening.html">
-                <li>
-                    <img src="assets/training_icon.png" height="27">
-                </li>
+                    <li>
+                        <img src="assets/training_icon.png" height="27">
+                    </li>
                 </a>
-
                 <a href="kosthold.html">
-                <li>
-                    <img src="assets/kosthold_icon.png" height="27">
-                </li>
+                    <li>
+                        <img src="assets/kosthold_icon.png" height="27">
+                    </li>
                 </a>
             </ul>
         </div>
     </div>
-     <script>
+    <script>
     $(document).ready(function() {
         $('.myStat').circliful();
     });
     </script>
-        <script src="js/hamburger-slide.js"></script>
+    <script src="js/hamburger-slide.js"></script>
 </body>
 
 </html>
