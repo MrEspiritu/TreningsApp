@@ -5,13 +5,16 @@ h2 {
     padding-top: 10px;
 }
 
-
-.login {
+body {
     margin: auto;
     background-image: url("../bilder/bg-log-inn.jpg");
     background-repeat: no-repeat;
     background-size: 450px;
-    background-position: -10px 60px;
+    background-position: 52% 60px;
+}
+
+.login {
+
 }
 
 .loggedin {
