@@ -2,7 +2,7 @@
 
 .kostholdmeny {
       height: 36%;
-    width: 49.47%;
+    width: 49.4%;
     display: inline-block;
     margin-bottom: 5px;
     text-align: center;
@@ -18,7 +18,7 @@
 
 .ku, .gris, .fisk, .kylling, .vegetar {
     background-repeat: no-repeat;
-    background-position: 69px 60px;
+    background-position: 50%  60px;
 }
 
 .ku {

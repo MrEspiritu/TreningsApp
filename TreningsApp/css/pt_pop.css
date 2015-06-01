@@ -4,7 +4,6 @@
 
 .rating {
     clear: both;
-      margin-left: 68px;
 
 }
 
@@ -63,7 +62,6 @@
 
 .pt_pop_profil img {
     float: left;
-    margin-left: 70px;
     margin-top: 10px;
     margin-bottom: 25px;
     height: 140px;
@@ -74,11 +72,9 @@
     float: right;
     margin-left: 25px;
 }
-.rating-left{
-    float:left;
-}
+
 .rating-right{
-    float:right;
+
 }
 .rating-right p{
     margin:0px;
