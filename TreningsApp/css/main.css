@@ -1,5 +1,5 @@
 body {
-    background-color: #f2dfd2;
+      background-color: #1b1b1b;
     margin: 0 auto;
     padding: 0px;
     font-family: 'Open Sans', sans-serif;
@@ -244,13 +244,13 @@ header #profilePic {
     background-color: #d05436;
 }
 
-.app {
+/*.app {
 
     background-color: #1b1b1b;
     width: 441px;
     height: 100%;
     margin: auto;
-}
+}*/
 
 #kosthold-widget h3 {
     margin-left: 10px;
@@ -353,11 +353,11 @@ header #profilePic {
 
 #container {
     position: relative;
-    height: 572px;
+    height: 70%;
     overflow-y: scroll;
 }
 
-@media screen and (max-width: 736px){
+/*@media screen and (max-width: 736px){
 
     .app{
       width: 100%;
@@ -368,3 +368,4 @@ header #profilePic {
 
 }
 
+*/
