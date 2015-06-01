@@ -245,10 +245,10 @@ header #profilePic {
 }
 
 .app {
-    position: relative;
+
     background-color: #1b1b1b;
     width: 441px;
-    height: 683px;
+    height: 100%;
     margin: auto;
 }
 
