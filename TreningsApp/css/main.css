@@ -351,11 +351,12 @@ header #profilePic {
 }
 
 
-/*#container {
-    position: relative;
-    height: 70%;
+#container {
+    position: absolute;
+      height: 84%;
+    width: 100%;
     overflow-y: scroll;
-}*/
+}
 
 /*@media screen and (max-width: 736px){
 
