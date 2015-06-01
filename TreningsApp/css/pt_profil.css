@@ -81,14 +81,13 @@ width: 41%;
     background-color: #b04930;
     height: 325px;
     width: 100%;
-    position: absolute;
-    top: 252px;
     padding: 0 20px;
     height: 66.2%;
     width: 100%;
-    overflow-y: scroll;
     display: none;
+    position: relative;
 }
+
 
 
 
@@ -141,9 +140,12 @@ width: 41%;
 }
 
 
+#bestillpt {
+    top: -119px;
+}
 
 #sendmelding {
-    top: 252px;
+    top: -119px
 
 }
 
@@ -216,8 +218,3 @@ Are you sure confirmation box
     margin-bottom: 10px;
 }
 
-#container {
-  position: relative;
-  height: 525px;
-  overflow-y: scroll;
-}
