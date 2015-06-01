@@ -357,3 +357,14 @@ header #profilePic {
     overflow-y: scroll;
 }
 
+@media screen and (max-width: 736px){
+
+    .app{
+      width: 100%;
+      height: 100%;
+    }
+
+   
+
+}
+
