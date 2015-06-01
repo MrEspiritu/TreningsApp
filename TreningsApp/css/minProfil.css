@@ -112,7 +112,9 @@ h4{
 
 
 .add-btn {
-
+  float: right;
+  margin-right: 3%;
+  margin-top: 4%;
 }
 
 .float-right {

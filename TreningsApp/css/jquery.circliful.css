@@ -13,6 +13,7 @@
 .circle-info, .circle-info-half {
     color:white;
     top: 45px;
+    font-size: 12px;
 }
 
 .circliful .fa {
@@ -23,7 +24,7 @@
 
 .myStat {
     display: inline-block;
-    margin-right: 20px;
+
 }
 
 #mittstilt {

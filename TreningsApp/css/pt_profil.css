@@ -20,10 +20,12 @@
 
 #profil {
 display: inline-block;
+width: 100%;
 }
 
 #profil img {
 float: left;
+height: 150px;
 
 
     margin-bottom: 25px;
@@ -157,10 +159,9 @@ float: left;
 
 input#number {
 
-      height: 43px;
+height: 43px;
   width: 44px;
-  position: relative;
-  right: -120px;
+  float: right;
 }
 
 .boks {

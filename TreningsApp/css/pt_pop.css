@@ -70,11 +70,16 @@
 
 #info_right {
     float: right;
-    margin-left: 25px;
+    margin-right: 5%;
 }
 
 .rating-right{
+    float: right;
+    margin-right: 5%;
+}
 
+.rating-left{
+    float: left;
 }
 .rating-right p{
     margin:0px;

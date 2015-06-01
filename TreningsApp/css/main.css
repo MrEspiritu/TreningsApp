@@ -350,6 +350,9 @@ header #profilePic {
   left: 10px;
 }
 
+.pt_pop_profil {
+    width: 100%;
+}
 
 #container {
     position: absolute;
