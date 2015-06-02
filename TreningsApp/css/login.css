@@ -38,6 +38,8 @@ body {
     top: 300px;
     position: absolute;
     width: 100%;
+    clear: both;
+    overflow: auto;
 }
 
 .username input,
@@ -114,4 +116,8 @@ body {
     color: white;
     margin-top: 35px;
       text-align: center;
+}
+
+.clear{
+    clear: both;
 }
