@@ -2,7 +2,7 @@
 
 
 .pt_button {
-    width: 181px;
+      width: 90%;
       height: 38px;
     background-color: #000;
     color: white;
@@ -13,9 +13,9 @@
 }
 
 #info_right {
-    float: right;
-
-    width: 200px;
+      float: right;
+  width: 54%;
+}
 }
 
 #profil {
@@ -78,14 +78,13 @@ width: 41%;
 }
 
 #bestillpt, #sendmelding {
+    position: absolute;
     background-color: #b04930;
-    height: 325px;
     width: 100%;
-    padding: 0 20px;
-    height: 66.2%;
+    padding: 10% 20px;
     width: 100%;
     display: none;
-    position: relative;
+
 }
 
 
@@ -131,7 +130,7 @@ width: 41%;
     position: absolute;
     height: 40px;
     width: 100%;
-    top: 60px;
+    top: 50%;
     background-color: #6f2e1e;
     z-index:2000;
     padding: 5px 0px;
@@ -140,14 +139,11 @@ width: 41%;
 }
 
 
-#bestillpt {
-    top: -119px;
+#bestillpt, #sendmelding {
+        top: 274px;
 }
 
-#sendmelding {
-    top: -119px
 
-}
 
 .boks-aktiv {
     border: 2px solid #73c547;
@@ -218,3 +214,16 @@ Are you sure confirmation box
     margin-bottom: 10px;
 }
 
+#container {
+  position: absolute;
+  height: 66%;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+@media only screen and (min-height: 360px) {
+
+   #bestillpt, #sendmelding {
+  top: 236px;
+}
+}

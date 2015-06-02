@@ -1,16 +1,25 @@
 @import url("main.css");
 
 .treningsmeny {
-      width: 49.4%;
-    display: inline-block;
+      width: 49%;
+
+    display: block;
+    float: left;
     margin-bottom: 5px;
     text-align: center;
     background-color: #414040;
+    margin-right: 0px;
+}
+
+
+
+#meny:nth-child(odd) .treningsmeny {
+    margin-right: 1%;
 }
 
 .treningsmeny p {
     position: relative;
-    margin-top: 120px;
+    margin-top: 70%;
     padding: 20px 0;
     color: white;
 }
@@ -26,10 +35,7 @@
 
 .treningsprogram {
     background-image: url("../assets/treningsplan.png");
-
-
 }
-
 
 
 .pt {
@@ -42,11 +48,3 @@
     background-image: url("../assets/treningssenter.png");
 }
 
-/*iphone 5*/
-@media screen and (device-aspect-ratio: 40/71){
-    .treningsmeny{
-        width:100%;
-    }
-
-
-}

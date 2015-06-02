@@ -305,7 +305,7 @@ header #profilePic {
 }
 
 #undermeny ul li {
-    padding: 10px 25px;
+    padding: 10px 7%;
 
     list-style: none;
     display: inline-block;
@@ -356,7 +356,7 @@ header #profilePic {
 
 #container {
     position: absolute;
-      height: 84%;
+     height: 77%;
     width: 100%;
     overflow-y: scroll;
 }

@@ -15,22 +15,12 @@
     background: #77392a
 }
 
-td p {
-    margin: 0px;
-}
 
 #senterbilde {
     display: block;
 }
 
-table>tr>td {
-    font-size:12px;
-}
 
-td {
-    color: white;
-    font-size: 10px;
-}
 
 h5 {
     font-size: 20px;
@@ -54,11 +44,14 @@ p {
     margin-bottom: 6px;
     margin-left: 5px;
     line-height: 30px;
+    font-size: 1em;
 }
 
 .info {
     font-weight: 200;
 }
+
+
 
 
 
@@ -83,4 +76,12 @@ p {
     display: block;
     margin: 0px;
     margin-bottom: 3px;
+}
+
+@media only screen and (max-width: 320px) {
+
+   p {
+    font-size: 0.8em;
+   }
+
 }
