@@ -38,8 +38,6 @@ body {
     top: 300px;
     position: absolute;
     width: 100%;
-    clear: both;
-    overflow: auto;
 }
 
 .username input,
@@ -120,4 +118,5 @@ body {
 
 .clear{
     clear: both;
+    overflow: auto;
 }
