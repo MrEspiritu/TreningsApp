@@ -46,3 +46,7 @@
 .vegetar {
     background-image: url("../assets/vegetar.png");
 }
+@media screen and (device-aspect-ratio: 40/71){
+    .kostholdmeny{
+        width:100%;
+    }
